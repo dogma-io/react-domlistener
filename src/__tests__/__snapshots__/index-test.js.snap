@@ -1,0 +1,461 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DOMListener when capture and once should function as expected when mounted 1`] = `
+<DOMListener
+  capture={true}
+  listener={[MockFunction]}
+  once={true}
+  target={
+    Object {
+      "addEventListener": [MockFunction] {
+        "calls": Array [
+          Array [
+            "click",
+            [MockFunction],
+            Object {
+              "capture": true,
+              "once": true,
+              "passive": undefined,
+            },
+          ],
+        ],
+      },
+      "removeEventListener": [MockFunction],
+    }
+  }
+  type="click"
+/>
+`;
+
+exports[`DOMListener when capture and once should function as expected when unmounted 1`] = `
+Object {
+  "target": Object {
+    "addEventListener": [MockFunction] {
+      "calls": Array [
+        Array [
+          "click",
+          [MockFunction],
+          Object {
+            "capture": true,
+            "once": true,
+            "passive": undefined,
+          },
+        ],
+      ],
+    },
+    "removeEventListener": [MockFunction] {
+      "calls": Array [
+        Array [
+          "click",
+          [MockFunction],
+          Object {
+            "capture": true,
+            "once": true,
+            "passive": undefined,
+          },
+        ],
+      ],
+    },
+  },
+  "wrapper": "",
+}
+`;
+
+exports[`DOMListener when capture and passive should function as expected when mounted 1`] = `
+<DOMListener
+  capture={true}
+  listener={[MockFunction]}
+  passive={true}
+  target={
+    Object {
+      "addEventListener": [MockFunction] {
+        "calls": Array [
+          Array [
+            "click",
+            [MockFunction],
+            Object {
+              "capture": true,
+              "once": undefined,
+              "passive": true,
+            },
+          ],
+        ],
+      },
+      "removeEventListener": [MockFunction],
+    }
+  }
+  type="click"
+/>
+`;
+
+exports[`DOMListener when capture and passive should function as expected when unmounted 1`] = `
+Object {
+  "target": Object {
+    "addEventListener": [MockFunction] {
+      "calls": Array [
+        Array [
+          "click",
+          [MockFunction],
+          Object {
+            "capture": true,
+            "once": undefined,
+            "passive": true,
+          },
+        ],
+      ],
+    },
+    "removeEventListener": [MockFunction] {
+      "calls": Array [
+        Array [
+          "click",
+          [MockFunction],
+          Object {
+            "capture": true,
+            "once": undefined,
+            "passive": true,
+          },
+        ],
+      ],
+    },
+  },
+  "wrapper": "",
+}
+`;
+
+exports[`DOMListener when capture should function as expected when mounted 1`] = `
+<DOMListener
+  capture={true}
+  listener={[MockFunction]}
+  target={
+    Object {
+      "addEventListener": [MockFunction] {
+        "calls": Array [
+          Array [
+            "click",
+            [MockFunction],
+            true,
+          ],
+        ],
+      },
+      "removeEventListener": [MockFunction],
+    }
+  }
+  type="click"
+/>
+`;
+
+exports[`DOMListener when capture should function as expected when unmounted 1`] = `
+Object {
+  "target": Object {
+    "addEventListener": [MockFunction] {
+      "calls": Array [
+        Array [
+          "click",
+          [MockFunction],
+          true,
+        ],
+      ],
+    },
+    "removeEventListener": [MockFunction] {
+      "calls": Array [
+        Array [
+          "click",
+          [MockFunction],
+          true,
+        ],
+      ],
+    },
+  },
+  "wrapper": "",
+}
+`;
+
+exports[`DOMListener when capture, once, and passive should function as expected when mounted 1`] = `
+<DOMListener
+  capture={true}
+  listener={[MockFunction]}
+  once={true}
+  passive={true}
+  target={
+    Object {
+      "addEventListener": [MockFunction] {
+        "calls": Array [
+          Array [
+            "click",
+            [MockFunction],
+            Object {
+              "capture": true,
+              "once": true,
+              "passive": true,
+            },
+          ],
+        ],
+      },
+      "removeEventListener": [MockFunction],
+    }
+  }
+  type="click"
+/>
+`;
+
+exports[`DOMListener when capture, once, and passive should function as expected when unmounted 1`] = `
+Object {
+  "target": Object {
+    "addEventListener": [MockFunction] {
+      "calls": Array [
+        Array [
+          "click",
+          [MockFunction],
+          Object {
+            "capture": true,
+            "once": true,
+            "passive": true,
+          },
+        ],
+      ],
+    },
+    "removeEventListener": [MockFunction] {
+      "calls": Array [
+        Array [
+          "click",
+          [MockFunction],
+          Object {
+            "capture": true,
+            "once": true,
+            "passive": true,
+          },
+        ],
+      ],
+    },
+  },
+  "wrapper": "",
+}
+`;
+
+exports[`DOMListener when not capture, once, or passive should function as expected when mounted 1`] = `
+<DOMListener
+  listener={[MockFunction]}
+  target={
+    Object {
+      "addEventListener": [MockFunction] {
+        "calls": Array [
+          Array [
+            "click",
+            [MockFunction],
+            false,
+          ],
+        ],
+      },
+      "removeEventListener": [MockFunction],
+    }
+  }
+  type="click"
+/>
+`;
+
+exports[`DOMListener when not capture, once, or passive should function as expected when unmounted 1`] = `
+Object {
+  "target": Object {
+    "addEventListener": [MockFunction] {
+      "calls": Array [
+        Array [
+          "click",
+          [MockFunction],
+          false,
+        ],
+      ],
+    },
+    "removeEventListener": [MockFunction] {
+      "calls": Array [
+        Array [
+          "click",
+          [MockFunction],
+          false,
+        ],
+      ],
+    },
+  },
+  "wrapper": "",
+}
+`;
+
+exports[`DOMListener when once and passive should function as expected when mounted 1`] = `
+<DOMListener
+  listener={[MockFunction]}
+  once={true}
+  passive={true}
+  target={
+    Object {
+      "addEventListener": [MockFunction] {
+        "calls": Array [
+          Array [
+            "click",
+            [MockFunction],
+            Object {
+              "capture": undefined,
+              "once": true,
+              "passive": true,
+            },
+          ],
+        ],
+      },
+      "removeEventListener": [MockFunction],
+    }
+  }
+  type="click"
+/>
+`;
+
+exports[`DOMListener when once and passive should function as expected when unmounted 1`] = `
+Object {
+  "target": Object {
+    "addEventListener": [MockFunction] {
+      "calls": Array [
+        Array [
+          "click",
+          [MockFunction],
+          Object {
+            "capture": undefined,
+            "once": true,
+            "passive": true,
+          },
+        ],
+      ],
+    },
+    "removeEventListener": [MockFunction] {
+      "calls": Array [
+        Array [
+          "click",
+          [MockFunction],
+          Object {
+            "capture": undefined,
+            "once": true,
+            "passive": true,
+          },
+        ],
+      ],
+    },
+  },
+  "wrapper": "",
+}
+`;
+
+exports[`DOMListener when once should function as expected when mounted 1`] = `
+<DOMListener
+  listener={[MockFunction]}
+  once={true}
+  target={
+    Object {
+      "addEventListener": [MockFunction] {
+        "calls": Array [
+          Array [
+            "click",
+            [MockFunction],
+            Object {
+              "capture": undefined,
+              "once": true,
+              "passive": undefined,
+            },
+          ],
+        ],
+      },
+      "removeEventListener": [MockFunction],
+    }
+  }
+  type="click"
+/>
+`;
+
+exports[`DOMListener when once should function as expected when unmounted 1`] = `
+Object {
+  "target": Object {
+    "addEventListener": [MockFunction] {
+      "calls": Array [
+        Array [
+          "click",
+          [MockFunction],
+          Object {
+            "capture": undefined,
+            "once": true,
+            "passive": undefined,
+          },
+        ],
+      ],
+    },
+    "removeEventListener": [MockFunction] {
+      "calls": Array [
+        Array [
+          "click",
+          [MockFunction],
+          Object {
+            "capture": undefined,
+            "once": true,
+            "passive": undefined,
+          },
+        ],
+      ],
+    },
+  },
+  "wrapper": "",
+}
+`;
+
+exports[`DOMListener when passive should function as expected when mounted 1`] = `
+<DOMListener
+  listener={[MockFunction]}
+  passive={true}
+  target={
+    Object {
+      "addEventListener": [MockFunction] {
+        "calls": Array [
+          Array [
+            "click",
+            [MockFunction],
+            Object {
+              "capture": undefined,
+              "once": undefined,
+              "passive": true,
+            },
+          ],
+        ],
+      },
+      "removeEventListener": [MockFunction],
+    }
+  }
+  type="click"
+/>
+`;
+
+exports[`DOMListener when passive should function as expected when unmounted 1`] = `
+Object {
+  "target": Object {
+    "addEventListener": [MockFunction] {
+      "calls": Array [
+        Array [
+          "click",
+          [MockFunction],
+          Object {
+            "capture": undefined,
+            "once": undefined,
+            "passive": true,
+          },
+        ],
+      ],
+    },
+    "removeEventListener": [MockFunction] {
+      "calls": Array [
+        Array [
+          "click",
+          [MockFunction],
+          Object {
+            "capture": undefined,
+            "once": undefined,
+            "passive": true,
+          },
+        ],
+      ],
+    },
+  },
+  "wrapper": "",
+}
+`;

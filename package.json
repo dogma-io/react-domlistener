@@ -1,0 +1,83 @@
+{
+  "name": "react-domlistener",
+  "version": "0.0.0",
+  "description": "React component for auto binding/unbinding event listeners during component life cycle.",
+  "main": "lib/index.js",
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "build": "nodely -s ./src -o ./lib -n 1 # && npm run gen-types",
+    "gen-types": "flow gen-flow-files src --out-dir lib",
+    "postpublish": "codecov",
+    "prepublishOnly": "npm run build",
+    "test": "lintly src && flow && jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/dogma-io/react-domlistener.git"
+  },
+  "keywords": [
+    "addEventListener",
+    "bind",
+    "dom",
+    "DOMListener",
+    "event",
+    "hadler",
+    "life cycle",
+    "listener",
+    "react",
+    "removeEventListener",
+    "unbind"
+  ],
+  "author": "Matthew Dahl <https://github.com/dogma-io>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dogma-io/react-domlistener/issues"
+  },
+  "homepage": "https://github.com/dogma-io/react-domlistener#readme",
+  "devDependencies": {
+    "@babel/plugin-proposal-class-properties": "7.0.0-beta.47",
+    "babel-core": "^7.0.0-0",
+    "babel-jest": "22.4.4",
+    "codecov": "3.0.2",
+    "enzyme": "3.3.0",
+    "enzyme-adapter-react-16": "1.1.1",
+    "enzyme-to-json": "3.3.4",
+    "jest": "22.4.4",
+    "lintly": "0.1.4",
+    "nodely": "0.1.6",
+    "react-dom": "16.3.2"
+  },
+  "dependencies": {
+    "react": "^16.3.0"
+  },
+  "engines": {
+    "node": ">= 6"
+  },
+  "jest": {
+    "collectCoverage": true,
+    "collectCoverageFrom": [
+      "src/**/*.js"
+    ],
+    "coverageReporters": [
+      "json-summary",
+      "lcov"
+    ],
+    "coverageThreshold": {
+      "global": {
+        "branches": 100,
+        "functions": 100,
+        "lines": 100,
+        "statements": 100
+      }
+    },
+    "setupFiles": [
+      "<rootDir>/jest-setup.js"
+    ],
+    "snapshotSerializers": [
+      "enzyme-to-json/serializer"
+    ],
+    "testRegex": "/__tests__/.*-test\\.js$"
+  }
+}
