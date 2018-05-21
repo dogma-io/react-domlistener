@@ -26,7 +26,7 @@ yarn add react-domlistener
 
 ## Documentation
 
-This project exports a single component, `DOMListener`, which serves the purpose of auto binding/unbinding an event listener during the life cycle of a React component.
+This project exports a single component, `DOMListener`, which serves the purpose of auto binding/unbinding an event listener during the life cycle of a React component. One of the advantages to using this component over manually adding `addEventListener`/`removeEventListener` bindings yourself is that you don't have to worry about cases where you forget to unbind. When forgetting to unbind event listeners you create memory leaks, which can be difficult to track down.
 
 Below is an example of how to use **react-domlistener**.
 
