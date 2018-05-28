@@ -1,6 +1,6 @@
 # react-domlistener [![NPM][npm-img]][npm-url] [![Coverage][cov-img]][cov-url]
 
-React component for auto binding/unbinding event listeners during component life cycle.
+React component for auto adding/removing event listeners during component life cycle.
 
 ## Table of Contents
 
@@ -26,12 +26,12 @@ yarn add react-domlistener
 
 ## Documentation
 
-This project exports a single component, `DOMListener`, which serves the purpose of auto binding/unbinding an event listener during the life cycle of a React component. One of the advantages to using this component over manually adding `addEventListener`/`removeEventListener` bindings yourself is that you don't have to worry about cases where you forget to unbind. When forgetting to unbind event listeners you create memory leaks, which can be difficult to track down.
+This project exports a component, `DOMListener`, which serves the purpose of auto adding/removing an event listener during the life cycle of a React component. One of the advantages to using this component over manually using `addEventListener`/`removeEventListener` yourself is that you don't have to worry about cases where you forget to remove. When forgetting to remove event listeners you create memory leaks, which can be difficult to track down.
 
 Below is an example of how to use **react-domlistener**.
 
 ```js
-import DOMListener from 'react-domlistener'
+import {DOMListener} from 'react-domlistener'
 
 export default class FooBar extends React.Component {
   _handleWindowResize = (e) => {
