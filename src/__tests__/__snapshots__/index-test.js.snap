@@ -19,6 +19,12 @@ exports[`DOMListener when capture and once should function as expected when moun
             },
           ],
         ],
+        "results": Array [
+          Object {
+            "isThrow": false,
+            "value": undefined,
+          },
+        ],
       },
       "removeEventListener": [MockFunction],
     }
@@ -42,6 +48,12 @@ Object {
           },
         ],
       ],
+      "results": Array [
+        Object {
+          "isThrow": false,
+          "value": undefined,
+        },
+      ],
     },
     "removeEventListener": [MockFunction] {
       "calls": Array [
@@ -55,10 +67,467 @@ Object {
           },
         ],
       ],
+      "results": Array [
+        Object {
+          "isThrow": false,
+          "value": undefined,
+        },
+      ],
     },
   },
   "wrapper": "",
 }
+`;
+
+exports[`DOMListener when capture and once when capture changed should remove original listener and add new listener 1`] = `
+<DOMListener
+  capture={false}
+  listener={[MockFunction]}
+  once={true}
+  target={
+    Object {
+      "addEventListener": [MockFunction] {
+        "calls": Array [
+          Array [
+            "click",
+            [MockFunction],
+            Object {
+              "capture": true,
+              "once": true,
+              "passive": undefined,
+            },
+          ],
+          Array [
+            "click",
+            [MockFunction],
+            Object {
+              "capture": false,
+              "once": true,
+              "passive": undefined,
+            },
+          ],
+        ],
+        "results": Array [
+          Object {
+            "isThrow": false,
+            "value": undefined,
+          },
+          Object {
+            "isThrow": false,
+            "value": undefined,
+          },
+        ],
+      },
+      "removeEventListener": [MockFunction] {
+        "calls": Array [
+          Array [
+            "click",
+            [MockFunction],
+            Object {
+              "capture": true,
+              "once": true,
+              "passive": undefined,
+            },
+          ],
+        ],
+        "results": Array [
+          Object {
+            "isThrow": false,
+            "value": undefined,
+          },
+        ],
+      },
+    }
+  }
+  type="click"
+/>
+`;
+
+exports[`DOMListener when capture and once when listener changed should remove original listener and add new listener 1`] = `
+<DOMListener
+  capture={true}
+  listener={[MockFunction]}
+  once={true}
+  target={
+    Object {
+      "addEventListener": [MockFunction] {
+        "calls": Array [
+          Array [
+            "click",
+            [MockFunction],
+            Object {
+              "capture": true,
+              "once": true,
+              "passive": undefined,
+            },
+          ],
+          Array [
+            "click",
+            [MockFunction],
+            Object {
+              "capture": true,
+              "once": true,
+              "passive": undefined,
+            },
+          ],
+        ],
+        "results": Array [
+          Object {
+            "isThrow": false,
+            "value": undefined,
+          },
+          Object {
+            "isThrow": false,
+            "value": undefined,
+          },
+        ],
+      },
+      "removeEventListener": [MockFunction] {
+        "calls": Array [
+          Array [
+            "click",
+            [MockFunction],
+            Object {
+              "capture": true,
+              "once": true,
+              "passive": undefined,
+            },
+          ],
+        ],
+        "results": Array [
+          Object {
+            "isThrow": false,
+            "value": undefined,
+          },
+        ],
+      },
+    }
+  }
+  type="click"
+/>
+`;
+
+exports[`DOMListener when capture and once when once changed should remove original listener and add new listener 1`] = `
+<DOMListener
+  capture={true}
+  listener={[MockFunction]}
+  once={false}
+  target={
+    Object {
+      "addEventListener": [MockFunction] {
+        "calls": Array [
+          Array [
+            "click",
+            [MockFunction],
+            Object {
+              "capture": true,
+              "once": true,
+              "passive": undefined,
+            },
+          ],
+          Array [
+            "click",
+            [MockFunction],
+            Object {
+              "capture": true,
+              "once": false,
+              "passive": undefined,
+            },
+          ],
+        ],
+        "results": Array [
+          Object {
+            "isThrow": false,
+            "value": undefined,
+          },
+          Object {
+            "isThrow": false,
+            "value": undefined,
+          },
+        ],
+      },
+      "removeEventListener": [MockFunction] {
+        "calls": Array [
+          Array [
+            "click",
+            [MockFunction],
+            Object {
+              "capture": true,
+              "once": true,
+              "passive": undefined,
+            },
+          ],
+        ],
+        "results": Array [
+          Object {
+            "isThrow": false,
+            "value": undefined,
+          },
+        ],
+      },
+    }
+  }
+  type="click"
+/>
+`;
+
+exports[`DOMListener when capture and once when passive changed should remove original listener and add new listener 1`] = `
+<DOMListener
+  capture={true}
+  listener={[MockFunction]}
+  once={true}
+  passive={true}
+  target={
+    Object {
+      "addEventListener": [MockFunction] {
+        "calls": Array [
+          Array [
+            "click",
+            [MockFunction],
+            Object {
+              "capture": true,
+              "once": true,
+              "passive": undefined,
+            },
+          ],
+          Array [
+            "click",
+            [MockFunction],
+            Object {
+              "capture": true,
+              "once": true,
+              "passive": true,
+            },
+          ],
+        ],
+        "results": Array [
+          Object {
+            "isThrow": false,
+            "value": undefined,
+          },
+          Object {
+            "isThrow": false,
+            "value": undefined,
+          },
+        ],
+      },
+      "removeEventListener": [MockFunction] {
+        "calls": Array [
+          Array [
+            "click",
+            [MockFunction],
+            Object {
+              "capture": true,
+              "once": true,
+              "passive": undefined,
+            },
+          ],
+        ],
+        "results": Array [
+          Object {
+            "isThrow": false,
+            "value": undefined,
+          },
+        ],
+      },
+    }
+  }
+  type="click"
+/>
+`;
+
+exports[`DOMListener when capture and once when target changed should remove original listener and add new listener 1`] = `
+Object {
+  "newTarget": Object {
+    "addEventListener": [MockFunction] {
+      "calls": Array [
+        Array [
+          "click",
+          [MockFunction],
+          Object {
+            "capture": true,
+            "once": true,
+            "passive": undefined,
+          },
+        ],
+      ],
+      "results": Array [
+        Object {
+          "isThrow": false,
+          "value": undefined,
+        },
+      ],
+    },
+    "removeEventListener": [MockFunction],
+  },
+  "target": Object {
+    "addEventListener": [MockFunction] {
+      "calls": Array [
+        Array [
+          "click",
+          [MockFunction],
+          Object {
+            "capture": true,
+            "once": true,
+            "passive": undefined,
+          },
+        ],
+      ],
+      "results": Array [
+        Object {
+          "isThrow": false,
+          "value": undefined,
+        },
+      ],
+    },
+    "removeEventListener": [MockFunction] {
+      "calls": Array [
+        Array [
+          "click",
+          [MockFunction],
+          Object {
+            "capture": true,
+            "once": true,
+            "passive": undefined,
+          },
+        ],
+      ],
+      "results": Array [
+        Object {
+          "isThrow": false,
+          "value": undefined,
+        },
+      ],
+    },
+  },
+  "wrapper": <DOMListener
+    capture={true}
+    listener={[MockFunction]}
+    once={true}
+    target={
+      Object {
+        "addEventListener": [MockFunction] {
+          "calls": Array [
+            Array [
+              "click",
+              [MockFunction],
+              Object {
+                "capture": true,
+                "once": true,
+                "passive": undefined,
+              },
+            ],
+          ],
+          "results": Array [
+            Object {
+              "isThrow": false,
+              "value": undefined,
+            },
+          ],
+        },
+        "removeEventListener": [MockFunction],
+      }
+    }
+    type="click"
+  />,
+}
+`;
+
+exports[`DOMListener when capture and once when type changed should remove original listener and add new listener 1`] = `
+<DOMListener
+  capture={true}
+  listener={[MockFunction]}
+  once={true}
+  target={
+    Object {
+      "addEventListener": [MockFunction] {
+        "calls": Array [
+          Array [
+            "click",
+            [MockFunction],
+            Object {
+              "capture": true,
+              "once": true,
+              "passive": undefined,
+            },
+          ],
+          Array [
+            "keyup",
+            [MockFunction],
+            Object {
+              "capture": true,
+              "once": true,
+              "passive": undefined,
+            },
+          ],
+        ],
+        "results": Array [
+          Object {
+            "isThrow": false,
+            "value": undefined,
+          },
+          Object {
+            "isThrow": false,
+            "value": undefined,
+          },
+        ],
+      },
+      "removeEventListener": [MockFunction] {
+        "calls": Array [
+          Array [
+            "click",
+            [MockFunction],
+            Object {
+              "capture": true,
+              "once": true,
+              "passive": undefined,
+            },
+          ],
+        ],
+        "results": Array [
+          Object {
+            "isThrow": false,
+            "value": undefined,
+          },
+        ],
+      },
+    }
+  }
+  type="keyup"
+/>
+`;
+
+exports[`DOMListener when capture and once when updated with no changes should not add/remove any listeners 1`] = `
+<DOMListener
+  capture={true}
+  listener={[MockFunction]}
+  once={true}
+  target={
+    Object {
+      "addEventListener": [MockFunction] {
+        "calls": Array [
+          Array [
+            "click",
+            [MockFunction],
+            Object {
+              "capture": true,
+              "once": true,
+              "passive": undefined,
+            },
+          ],
+        ],
+        "results": Array [
+          Object {
+            "isThrow": false,
+            "value": undefined,
+          },
+        ],
+      },
+      "removeEventListener": [MockFunction],
+    }
+  }
+  type="click"
+/>
 `;
 
 exports[`DOMListener when capture and passive should function as expected when mounted 1`] = `
@@ -79,6 +548,12 @@ exports[`DOMListener when capture and passive should function as expected when m
               "passive": true,
             },
           ],
+        ],
+        "results": Array [
+          Object {
+            "isThrow": false,
+            "value": undefined,
+          },
         ],
       },
       "removeEventListener": [MockFunction],
@@ -103,6 +578,12 @@ Object {
           },
         ],
       ],
+      "results": Array [
+        Object {
+          "isThrow": false,
+          "value": undefined,
+        },
+      ],
     },
     "removeEventListener": [MockFunction] {
       "calls": Array [
@@ -116,10 +597,467 @@ Object {
           },
         ],
       ],
+      "results": Array [
+        Object {
+          "isThrow": false,
+          "value": undefined,
+        },
+      ],
     },
   },
   "wrapper": "",
 }
+`;
+
+exports[`DOMListener when capture and passive when capture changed should remove original listener and add new listener 1`] = `
+<DOMListener
+  capture={false}
+  listener={[MockFunction]}
+  passive={true}
+  target={
+    Object {
+      "addEventListener": [MockFunction] {
+        "calls": Array [
+          Array [
+            "click",
+            [MockFunction],
+            Object {
+              "capture": true,
+              "once": undefined,
+              "passive": true,
+            },
+          ],
+          Array [
+            "click",
+            [MockFunction],
+            Object {
+              "capture": false,
+              "once": undefined,
+              "passive": true,
+            },
+          ],
+        ],
+        "results": Array [
+          Object {
+            "isThrow": false,
+            "value": undefined,
+          },
+          Object {
+            "isThrow": false,
+            "value": undefined,
+          },
+        ],
+      },
+      "removeEventListener": [MockFunction] {
+        "calls": Array [
+          Array [
+            "click",
+            [MockFunction],
+            Object {
+              "capture": true,
+              "once": undefined,
+              "passive": true,
+            },
+          ],
+        ],
+        "results": Array [
+          Object {
+            "isThrow": false,
+            "value": undefined,
+          },
+        ],
+      },
+    }
+  }
+  type="click"
+/>
+`;
+
+exports[`DOMListener when capture and passive when listener changed should remove original listener and add new listener 1`] = `
+<DOMListener
+  capture={true}
+  listener={[MockFunction]}
+  passive={true}
+  target={
+    Object {
+      "addEventListener": [MockFunction] {
+        "calls": Array [
+          Array [
+            "click",
+            [MockFunction],
+            Object {
+              "capture": true,
+              "once": undefined,
+              "passive": true,
+            },
+          ],
+          Array [
+            "click",
+            [MockFunction],
+            Object {
+              "capture": true,
+              "once": undefined,
+              "passive": true,
+            },
+          ],
+        ],
+        "results": Array [
+          Object {
+            "isThrow": false,
+            "value": undefined,
+          },
+          Object {
+            "isThrow": false,
+            "value": undefined,
+          },
+        ],
+      },
+      "removeEventListener": [MockFunction] {
+        "calls": Array [
+          Array [
+            "click",
+            [MockFunction],
+            Object {
+              "capture": true,
+              "once": undefined,
+              "passive": true,
+            },
+          ],
+        ],
+        "results": Array [
+          Object {
+            "isThrow": false,
+            "value": undefined,
+          },
+        ],
+      },
+    }
+  }
+  type="click"
+/>
+`;
+
+exports[`DOMListener when capture and passive when once changed should remove original listener and add new listener 1`] = `
+<DOMListener
+  capture={true}
+  listener={[MockFunction]}
+  once={true}
+  passive={true}
+  target={
+    Object {
+      "addEventListener": [MockFunction] {
+        "calls": Array [
+          Array [
+            "click",
+            [MockFunction],
+            Object {
+              "capture": true,
+              "once": undefined,
+              "passive": true,
+            },
+          ],
+          Array [
+            "click",
+            [MockFunction],
+            Object {
+              "capture": true,
+              "once": true,
+              "passive": true,
+            },
+          ],
+        ],
+        "results": Array [
+          Object {
+            "isThrow": false,
+            "value": undefined,
+          },
+          Object {
+            "isThrow": false,
+            "value": undefined,
+          },
+        ],
+      },
+      "removeEventListener": [MockFunction] {
+        "calls": Array [
+          Array [
+            "click",
+            [MockFunction],
+            Object {
+              "capture": true,
+              "once": undefined,
+              "passive": true,
+            },
+          ],
+        ],
+        "results": Array [
+          Object {
+            "isThrow": false,
+            "value": undefined,
+          },
+        ],
+      },
+    }
+  }
+  type="click"
+/>
+`;
+
+exports[`DOMListener when capture and passive when passive changed should remove original listener and add new listener 1`] = `
+<DOMListener
+  capture={true}
+  listener={[MockFunction]}
+  passive={false}
+  target={
+    Object {
+      "addEventListener": [MockFunction] {
+        "calls": Array [
+          Array [
+            "click",
+            [MockFunction],
+            Object {
+              "capture": true,
+              "once": undefined,
+              "passive": true,
+            },
+          ],
+          Array [
+            "click",
+            [MockFunction],
+            Object {
+              "capture": true,
+              "once": undefined,
+              "passive": false,
+            },
+          ],
+        ],
+        "results": Array [
+          Object {
+            "isThrow": false,
+            "value": undefined,
+          },
+          Object {
+            "isThrow": false,
+            "value": undefined,
+          },
+        ],
+      },
+      "removeEventListener": [MockFunction] {
+        "calls": Array [
+          Array [
+            "click",
+            [MockFunction],
+            Object {
+              "capture": true,
+              "once": undefined,
+              "passive": true,
+            },
+          ],
+        ],
+        "results": Array [
+          Object {
+            "isThrow": false,
+            "value": undefined,
+          },
+        ],
+      },
+    }
+  }
+  type="click"
+/>
+`;
+
+exports[`DOMListener when capture and passive when target changed should remove original listener and add new listener 1`] = `
+Object {
+  "newTarget": Object {
+    "addEventListener": [MockFunction] {
+      "calls": Array [
+        Array [
+          "click",
+          [MockFunction],
+          Object {
+            "capture": true,
+            "once": undefined,
+            "passive": true,
+          },
+        ],
+      ],
+      "results": Array [
+        Object {
+          "isThrow": false,
+          "value": undefined,
+        },
+      ],
+    },
+    "removeEventListener": [MockFunction],
+  },
+  "target": Object {
+    "addEventListener": [MockFunction] {
+      "calls": Array [
+        Array [
+          "click",
+          [MockFunction],
+          Object {
+            "capture": true,
+            "once": undefined,
+            "passive": true,
+          },
+        ],
+      ],
+      "results": Array [
+        Object {
+          "isThrow": false,
+          "value": undefined,
+        },
+      ],
+    },
+    "removeEventListener": [MockFunction] {
+      "calls": Array [
+        Array [
+          "click",
+          [MockFunction],
+          Object {
+            "capture": true,
+            "once": undefined,
+            "passive": true,
+          },
+        ],
+      ],
+      "results": Array [
+        Object {
+          "isThrow": false,
+          "value": undefined,
+        },
+      ],
+    },
+  },
+  "wrapper": <DOMListener
+    capture={true}
+    listener={[MockFunction]}
+    passive={true}
+    target={
+      Object {
+        "addEventListener": [MockFunction] {
+          "calls": Array [
+            Array [
+              "click",
+              [MockFunction],
+              Object {
+                "capture": true,
+                "once": undefined,
+                "passive": true,
+              },
+            ],
+          ],
+          "results": Array [
+            Object {
+              "isThrow": false,
+              "value": undefined,
+            },
+          ],
+        },
+        "removeEventListener": [MockFunction],
+      }
+    }
+    type="click"
+  />,
+}
+`;
+
+exports[`DOMListener when capture and passive when type changed should remove original listener and add new listener 1`] = `
+<DOMListener
+  capture={true}
+  listener={[MockFunction]}
+  passive={true}
+  target={
+    Object {
+      "addEventListener": [MockFunction] {
+        "calls": Array [
+          Array [
+            "click",
+            [MockFunction],
+            Object {
+              "capture": true,
+              "once": undefined,
+              "passive": true,
+            },
+          ],
+          Array [
+            "keyup",
+            [MockFunction],
+            Object {
+              "capture": true,
+              "once": undefined,
+              "passive": true,
+            },
+          ],
+        ],
+        "results": Array [
+          Object {
+            "isThrow": false,
+            "value": undefined,
+          },
+          Object {
+            "isThrow": false,
+            "value": undefined,
+          },
+        ],
+      },
+      "removeEventListener": [MockFunction] {
+        "calls": Array [
+          Array [
+            "click",
+            [MockFunction],
+            Object {
+              "capture": true,
+              "once": undefined,
+              "passive": true,
+            },
+          ],
+        ],
+        "results": Array [
+          Object {
+            "isThrow": false,
+            "value": undefined,
+          },
+        ],
+      },
+    }
+  }
+  type="keyup"
+/>
+`;
+
+exports[`DOMListener when capture and passive when updated with no changes should not add/remove any listeners 1`] = `
+<DOMListener
+  capture={true}
+  listener={[MockFunction]}
+  passive={true}
+  target={
+    Object {
+      "addEventListener": [MockFunction] {
+        "calls": Array [
+          Array [
+            "click",
+            [MockFunction],
+            Object {
+              "capture": true,
+              "once": undefined,
+              "passive": true,
+            },
+          ],
+        ],
+        "results": Array [
+          Object {
+            "isThrow": false,
+            "value": undefined,
+          },
+        ],
+      },
+      "removeEventListener": [MockFunction],
+    }
+  }
+  type="click"
+/>
 `;
 
 exports[`DOMListener when capture should function as expected when mounted 1`] = `
@@ -135,6 +1073,12 @@ exports[`DOMListener when capture should function as expected when mounted 1`] =
             [MockFunction],
             true,
           ],
+        ],
+        "results": Array [
+          Object {
+            "isThrow": false,
+            "value": undefined,
+          },
         ],
       },
       "removeEventListener": [MockFunction],
@@ -155,6 +1099,12 @@ Object {
           true,
         ],
       ],
+      "results": Array [
+        Object {
+          "isThrow": false,
+          "value": undefined,
+        },
+      ],
     },
     "removeEventListener": [MockFunction] {
       "calls": Array [
@@ -164,10 +1114,389 @@ Object {
           true,
         ],
       ],
+      "results": Array [
+        Object {
+          "isThrow": false,
+          "value": undefined,
+        },
+      ],
     },
   },
   "wrapper": "",
 }
+`;
+
+exports[`DOMListener when capture when capture changed should remove original listener and add new listener 1`] = `
+<DOMListener
+  capture={false}
+  listener={[MockFunction]}
+  target={
+    Object {
+      "addEventListener": [MockFunction] {
+        "calls": Array [
+          Array [
+            "click",
+            [MockFunction],
+            true,
+          ],
+          Array [
+            "click",
+            [MockFunction],
+            false,
+          ],
+        ],
+        "results": Array [
+          Object {
+            "isThrow": false,
+            "value": undefined,
+          },
+          Object {
+            "isThrow": false,
+            "value": undefined,
+          },
+        ],
+      },
+      "removeEventListener": [MockFunction] {
+        "calls": Array [
+          Array [
+            "click",
+            [MockFunction],
+            true,
+          ],
+        ],
+        "results": Array [
+          Object {
+            "isThrow": false,
+            "value": undefined,
+          },
+        ],
+      },
+    }
+  }
+  type="click"
+/>
+`;
+
+exports[`DOMListener when capture when listener changed should remove original listener and add new listener 1`] = `
+<DOMListener
+  capture={true}
+  listener={[MockFunction]}
+  target={
+    Object {
+      "addEventListener": [MockFunction] {
+        "calls": Array [
+          Array [
+            "click",
+            [MockFunction],
+            true,
+          ],
+          Array [
+            "click",
+            [MockFunction],
+            true,
+          ],
+        ],
+        "results": Array [
+          Object {
+            "isThrow": false,
+            "value": undefined,
+          },
+          Object {
+            "isThrow": false,
+            "value": undefined,
+          },
+        ],
+      },
+      "removeEventListener": [MockFunction] {
+        "calls": Array [
+          Array [
+            "click",
+            [MockFunction],
+            true,
+          ],
+        ],
+        "results": Array [
+          Object {
+            "isThrow": false,
+            "value": undefined,
+          },
+        ],
+      },
+    }
+  }
+  type="click"
+/>
+`;
+
+exports[`DOMListener when capture when once changed should remove original listener and add new listener 1`] = `
+<DOMListener
+  capture={true}
+  listener={[MockFunction]}
+  once={true}
+  target={
+    Object {
+      "addEventListener": [MockFunction] {
+        "calls": Array [
+          Array [
+            "click",
+            [MockFunction],
+            true,
+          ],
+          Array [
+            "click",
+            [MockFunction],
+            Object {
+              "capture": true,
+              "once": true,
+              "passive": undefined,
+            },
+          ],
+        ],
+        "results": Array [
+          Object {
+            "isThrow": false,
+            "value": undefined,
+          },
+          Object {
+            "isThrow": false,
+            "value": undefined,
+          },
+        ],
+      },
+      "removeEventListener": [MockFunction] {
+        "calls": Array [
+          Array [
+            "click",
+            [MockFunction],
+            true,
+          ],
+        ],
+        "results": Array [
+          Object {
+            "isThrow": false,
+            "value": undefined,
+          },
+        ],
+      },
+    }
+  }
+  type="click"
+/>
+`;
+
+exports[`DOMListener when capture when passive changed should remove original listener and add new listener 1`] = `
+<DOMListener
+  capture={true}
+  listener={[MockFunction]}
+  passive={true}
+  target={
+    Object {
+      "addEventListener": [MockFunction] {
+        "calls": Array [
+          Array [
+            "click",
+            [MockFunction],
+            true,
+          ],
+          Array [
+            "click",
+            [MockFunction],
+            Object {
+              "capture": true,
+              "once": undefined,
+              "passive": true,
+            },
+          ],
+        ],
+        "results": Array [
+          Object {
+            "isThrow": false,
+            "value": undefined,
+          },
+          Object {
+            "isThrow": false,
+            "value": undefined,
+          },
+        ],
+      },
+      "removeEventListener": [MockFunction] {
+        "calls": Array [
+          Array [
+            "click",
+            [MockFunction],
+            true,
+          ],
+        ],
+        "results": Array [
+          Object {
+            "isThrow": false,
+            "value": undefined,
+          },
+        ],
+      },
+    }
+  }
+  type="click"
+/>
+`;
+
+exports[`DOMListener when capture when target changed should remove original listener and add new listener 1`] = `
+Object {
+  "newTarget": Object {
+    "addEventListener": [MockFunction] {
+      "calls": Array [
+        Array [
+          "click",
+          [MockFunction],
+          true,
+        ],
+      ],
+      "results": Array [
+        Object {
+          "isThrow": false,
+          "value": undefined,
+        },
+      ],
+    },
+    "removeEventListener": [MockFunction],
+  },
+  "target": Object {
+    "addEventListener": [MockFunction] {
+      "calls": Array [
+        Array [
+          "click",
+          [MockFunction],
+          true,
+        ],
+      ],
+      "results": Array [
+        Object {
+          "isThrow": false,
+          "value": undefined,
+        },
+      ],
+    },
+    "removeEventListener": [MockFunction] {
+      "calls": Array [
+        Array [
+          "click",
+          [MockFunction],
+          true,
+        ],
+      ],
+      "results": Array [
+        Object {
+          "isThrow": false,
+          "value": undefined,
+        },
+      ],
+    },
+  },
+  "wrapper": <DOMListener
+    capture={true}
+    listener={[MockFunction]}
+    target={
+      Object {
+        "addEventListener": [MockFunction] {
+          "calls": Array [
+            Array [
+              "click",
+              [MockFunction],
+              true,
+            ],
+          ],
+          "results": Array [
+            Object {
+              "isThrow": false,
+              "value": undefined,
+            },
+          ],
+        },
+        "removeEventListener": [MockFunction],
+      }
+    }
+    type="click"
+  />,
+}
+`;
+
+exports[`DOMListener when capture when type changed should remove original listener and add new listener 1`] = `
+<DOMListener
+  capture={true}
+  listener={[MockFunction]}
+  target={
+    Object {
+      "addEventListener": [MockFunction] {
+        "calls": Array [
+          Array [
+            "click",
+            [MockFunction],
+            true,
+          ],
+          Array [
+            "keyup",
+            [MockFunction],
+            true,
+          ],
+        ],
+        "results": Array [
+          Object {
+            "isThrow": false,
+            "value": undefined,
+          },
+          Object {
+            "isThrow": false,
+            "value": undefined,
+          },
+        ],
+      },
+      "removeEventListener": [MockFunction] {
+        "calls": Array [
+          Array [
+            "click",
+            [MockFunction],
+            true,
+          ],
+        ],
+        "results": Array [
+          Object {
+            "isThrow": false,
+            "value": undefined,
+          },
+        ],
+      },
+    }
+  }
+  type="keyup"
+/>
+`;
+
+exports[`DOMListener when capture when updated with no changes should not add/remove any listeners 1`] = `
+<DOMListener
+  capture={true}
+  listener={[MockFunction]}
+  target={
+    Object {
+      "addEventListener": [MockFunction] {
+        "calls": Array [
+          Array [
+            "click",
+            [MockFunction],
+            true,
+          ],
+        ],
+        "results": Array [
+          Object {
+            "isThrow": false,
+            "value": undefined,
+          },
+        ],
+      },
+      "removeEventListener": [MockFunction],
+    }
+  }
+  type="click"
+/>
 `;
 
 exports[`DOMListener when capture, once, and passive should function as expected when mounted 1`] = `
@@ -189,6 +1518,12 @@ exports[`DOMListener when capture, once, and passive should function as expected
               "passive": true,
             },
           ],
+        ],
+        "results": Array [
+          Object {
+            "isThrow": false,
+            "value": undefined,
+          },
         ],
       },
       "removeEventListener": [MockFunction],
@@ -213,6 +1548,12 @@ Object {
           },
         ],
       ],
+      "results": Array [
+        Object {
+          "isThrow": false,
+          "value": undefined,
+        },
+      ],
     },
     "removeEventListener": [MockFunction] {
       "calls": Array [
@@ -226,10 +1567,473 @@ Object {
           },
         ],
       ],
+      "results": Array [
+        Object {
+          "isThrow": false,
+          "value": undefined,
+        },
+      ],
     },
   },
   "wrapper": "",
 }
+`;
+
+exports[`DOMListener when capture, once, and passive when capture changed should remove original listener and add new listener 1`] = `
+<DOMListener
+  capture={false}
+  listener={[MockFunction]}
+  once={true}
+  passive={true}
+  target={
+    Object {
+      "addEventListener": [MockFunction] {
+        "calls": Array [
+          Array [
+            "click",
+            [MockFunction],
+            Object {
+              "capture": true,
+              "once": true,
+              "passive": true,
+            },
+          ],
+          Array [
+            "click",
+            [MockFunction],
+            Object {
+              "capture": false,
+              "once": true,
+              "passive": true,
+            },
+          ],
+        ],
+        "results": Array [
+          Object {
+            "isThrow": false,
+            "value": undefined,
+          },
+          Object {
+            "isThrow": false,
+            "value": undefined,
+          },
+        ],
+      },
+      "removeEventListener": [MockFunction] {
+        "calls": Array [
+          Array [
+            "click",
+            [MockFunction],
+            Object {
+              "capture": true,
+              "once": true,
+              "passive": true,
+            },
+          ],
+        ],
+        "results": Array [
+          Object {
+            "isThrow": false,
+            "value": undefined,
+          },
+        ],
+      },
+    }
+  }
+  type="click"
+/>
+`;
+
+exports[`DOMListener when capture, once, and passive when listener changed should remove original listener and add new listener 1`] = `
+<DOMListener
+  capture={true}
+  listener={[MockFunction]}
+  once={true}
+  passive={true}
+  target={
+    Object {
+      "addEventListener": [MockFunction] {
+        "calls": Array [
+          Array [
+            "click",
+            [MockFunction],
+            Object {
+              "capture": true,
+              "once": true,
+              "passive": true,
+            },
+          ],
+          Array [
+            "click",
+            [MockFunction],
+            Object {
+              "capture": true,
+              "once": true,
+              "passive": true,
+            },
+          ],
+        ],
+        "results": Array [
+          Object {
+            "isThrow": false,
+            "value": undefined,
+          },
+          Object {
+            "isThrow": false,
+            "value": undefined,
+          },
+        ],
+      },
+      "removeEventListener": [MockFunction] {
+        "calls": Array [
+          Array [
+            "click",
+            [MockFunction],
+            Object {
+              "capture": true,
+              "once": true,
+              "passive": true,
+            },
+          ],
+        ],
+        "results": Array [
+          Object {
+            "isThrow": false,
+            "value": undefined,
+          },
+        ],
+      },
+    }
+  }
+  type="click"
+/>
+`;
+
+exports[`DOMListener when capture, once, and passive when once changed should remove original listener and add new listener 1`] = `
+<DOMListener
+  capture={true}
+  listener={[MockFunction]}
+  once={false}
+  passive={true}
+  target={
+    Object {
+      "addEventListener": [MockFunction] {
+        "calls": Array [
+          Array [
+            "click",
+            [MockFunction],
+            Object {
+              "capture": true,
+              "once": true,
+              "passive": true,
+            },
+          ],
+          Array [
+            "click",
+            [MockFunction],
+            Object {
+              "capture": true,
+              "once": false,
+              "passive": true,
+            },
+          ],
+        ],
+        "results": Array [
+          Object {
+            "isThrow": false,
+            "value": undefined,
+          },
+          Object {
+            "isThrow": false,
+            "value": undefined,
+          },
+        ],
+      },
+      "removeEventListener": [MockFunction] {
+        "calls": Array [
+          Array [
+            "click",
+            [MockFunction],
+            Object {
+              "capture": true,
+              "once": true,
+              "passive": true,
+            },
+          ],
+        ],
+        "results": Array [
+          Object {
+            "isThrow": false,
+            "value": undefined,
+          },
+        ],
+      },
+    }
+  }
+  type="click"
+/>
+`;
+
+exports[`DOMListener when capture, once, and passive when passive changed should remove original listener and add new listener 1`] = `
+<DOMListener
+  capture={true}
+  listener={[MockFunction]}
+  once={true}
+  passive={false}
+  target={
+    Object {
+      "addEventListener": [MockFunction] {
+        "calls": Array [
+          Array [
+            "click",
+            [MockFunction],
+            Object {
+              "capture": true,
+              "once": true,
+              "passive": true,
+            },
+          ],
+          Array [
+            "click",
+            [MockFunction],
+            Object {
+              "capture": true,
+              "once": true,
+              "passive": false,
+            },
+          ],
+        ],
+        "results": Array [
+          Object {
+            "isThrow": false,
+            "value": undefined,
+          },
+          Object {
+            "isThrow": false,
+            "value": undefined,
+          },
+        ],
+      },
+      "removeEventListener": [MockFunction] {
+        "calls": Array [
+          Array [
+            "click",
+            [MockFunction],
+            Object {
+              "capture": true,
+              "once": true,
+              "passive": true,
+            },
+          ],
+        ],
+        "results": Array [
+          Object {
+            "isThrow": false,
+            "value": undefined,
+          },
+        ],
+      },
+    }
+  }
+  type="click"
+/>
+`;
+
+exports[`DOMListener when capture, once, and passive when target changed should remove original listener and add new listener 1`] = `
+Object {
+  "newTarget": Object {
+    "addEventListener": [MockFunction] {
+      "calls": Array [
+        Array [
+          "click",
+          [MockFunction],
+          Object {
+            "capture": true,
+            "once": true,
+            "passive": true,
+          },
+        ],
+      ],
+      "results": Array [
+        Object {
+          "isThrow": false,
+          "value": undefined,
+        },
+      ],
+    },
+    "removeEventListener": [MockFunction],
+  },
+  "target": Object {
+    "addEventListener": [MockFunction] {
+      "calls": Array [
+        Array [
+          "click",
+          [MockFunction],
+          Object {
+            "capture": true,
+            "once": true,
+            "passive": true,
+          },
+        ],
+      ],
+      "results": Array [
+        Object {
+          "isThrow": false,
+          "value": undefined,
+        },
+      ],
+    },
+    "removeEventListener": [MockFunction] {
+      "calls": Array [
+        Array [
+          "click",
+          [MockFunction],
+          Object {
+            "capture": true,
+            "once": true,
+            "passive": true,
+          },
+        ],
+      ],
+      "results": Array [
+        Object {
+          "isThrow": false,
+          "value": undefined,
+        },
+      ],
+    },
+  },
+  "wrapper": <DOMListener
+    capture={true}
+    listener={[MockFunction]}
+    once={true}
+    passive={true}
+    target={
+      Object {
+        "addEventListener": [MockFunction] {
+          "calls": Array [
+            Array [
+              "click",
+              [MockFunction],
+              Object {
+                "capture": true,
+                "once": true,
+                "passive": true,
+              },
+            ],
+          ],
+          "results": Array [
+            Object {
+              "isThrow": false,
+              "value": undefined,
+            },
+          ],
+        },
+        "removeEventListener": [MockFunction],
+      }
+    }
+    type="click"
+  />,
+}
+`;
+
+exports[`DOMListener when capture, once, and passive when type changed should remove original listener and add new listener 1`] = `
+<DOMListener
+  capture={true}
+  listener={[MockFunction]}
+  once={true}
+  passive={true}
+  target={
+    Object {
+      "addEventListener": [MockFunction] {
+        "calls": Array [
+          Array [
+            "click",
+            [MockFunction],
+            Object {
+              "capture": true,
+              "once": true,
+              "passive": true,
+            },
+          ],
+          Array [
+            "keyup",
+            [MockFunction],
+            Object {
+              "capture": true,
+              "once": true,
+              "passive": true,
+            },
+          ],
+        ],
+        "results": Array [
+          Object {
+            "isThrow": false,
+            "value": undefined,
+          },
+          Object {
+            "isThrow": false,
+            "value": undefined,
+          },
+        ],
+      },
+      "removeEventListener": [MockFunction] {
+        "calls": Array [
+          Array [
+            "click",
+            [MockFunction],
+            Object {
+              "capture": true,
+              "once": true,
+              "passive": true,
+            },
+          ],
+        ],
+        "results": Array [
+          Object {
+            "isThrow": false,
+            "value": undefined,
+          },
+        ],
+      },
+    }
+  }
+  type="keyup"
+/>
+`;
+
+exports[`DOMListener when capture, once, and passive when updated with no changes should not add/remove any listeners 1`] = `
+<DOMListener
+  capture={true}
+  listener={[MockFunction]}
+  once={true}
+  passive={true}
+  target={
+    Object {
+      "addEventListener": [MockFunction] {
+        "calls": Array [
+          Array [
+            "click",
+            [MockFunction],
+            Object {
+              "capture": true,
+              "once": true,
+              "passive": true,
+            },
+          ],
+        ],
+        "results": Array [
+          Object {
+            "isThrow": false,
+            "value": undefined,
+          },
+        ],
+      },
+      "removeEventListener": [MockFunction],
+    }
+  }
+  type="click"
+/>
 `;
 
 exports[`DOMListener when not capture, once, or passive should function as expected when mounted 1`] = `
@@ -244,6 +2048,12 @@ exports[`DOMListener when not capture, once, or passive should function as expec
             [MockFunction],
             false,
           ],
+        ],
+        "results": Array [
+          Object {
+            "isThrow": false,
+            "value": undefined,
+          },
         ],
       },
       "removeEventListener": [MockFunction],
@@ -264,6 +2074,12 @@ Object {
           false,
         ],
       ],
+      "results": Array [
+        Object {
+          "isThrow": false,
+          "value": undefined,
+        },
+      ],
     },
     "removeEventListener": [MockFunction] {
       "calls": Array [
@@ -273,10 +2089,383 @@ Object {
           false,
         ],
       ],
+      "results": Array [
+        Object {
+          "isThrow": false,
+          "value": undefined,
+        },
+      ],
     },
   },
   "wrapper": "",
 }
+`;
+
+exports[`DOMListener when not capture, once, or passive when capture changed should remove original listener and add new listener 1`] = `
+<DOMListener
+  capture={true}
+  listener={[MockFunction]}
+  target={
+    Object {
+      "addEventListener": [MockFunction] {
+        "calls": Array [
+          Array [
+            "click",
+            [MockFunction],
+            false,
+          ],
+          Array [
+            "click",
+            [MockFunction],
+            true,
+          ],
+        ],
+        "results": Array [
+          Object {
+            "isThrow": false,
+            "value": undefined,
+          },
+          Object {
+            "isThrow": false,
+            "value": undefined,
+          },
+        ],
+      },
+      "removeEventListener": [MockFunction] {
+        "calls": Array [
+          Array [
+            "click",
+            [MockFunction],
+            false,
+          ],
+        ],
+        "results": Array [
+          Object {
+            "isThrow": false,
+            "value": undefined,
+          },
+        ],
+      },
+    }
+  }
+  type="click"
+/>
+`;
+
+exports[`DOMListener when not capture, once, or passive when listener changed should remove original listener and add new listener 1`] = `
+<DOMListener
+  listener={[MockFunction]}
+  target={
+    Object {
+      "addEventListener": [MockFunction] {
+        "calls": Array [
+          Array [
+            "click",
+            [MockFunction],
+            false,
+          ],
+          Array [
+            "click",
+            [MockFunction],
+            false,
+          ],
+        ],
+        "results": Array [
+          Object {
+            "isThrow": false,
+            "value": undefined,
+          },
+          Object {
+            "isThrow": false,
+            "value": undefined,
+          },
+        ],
+      },
+      "removeEventListener": [MockFunction] {
+        "calls": Array [
+          Array [
+            "click",
+            [MockFunction],
+            false,
+          ],
+        ],
+        "results": Array [
+          Object {
+            "isThrow": false,
+            "value": undefined,
+          },
+        ],
+      },
+    }
+  }
+  type="click"
+/>
+`;
+
+exports[`DOMListener when not capture, once, or passive when once changed should remove original listener and add new listener 1`] = `
+<DOMListener
+  listener={[MockFunction]}
+  once={true}
+  target={
+    Object {
+      "addEventListener": [MockFunction] {
+        "calls": Array [
+          Array [
+            "click",
+            [MockFunction],
+            false,
+          ],
+          Array [
+            "click",
+            [MockFunction],
+            Object {
+              "capture": undefined,
+              "once": true,
+              "passive": undefined,
+            },
+          ],
+        ],
+        "results": Array [
+          Object {
+            "isThrow": false,
+            "value": undefined,
+          },
+          Object {
+            "isThrow": false,
+            "value": undefined,
+          },
+        ],
+      },
+      "removeEventListener": [MockFunction] {
+        "calls": Array [
+          Array [
+            "click",
+            [MockFunction],
+            false,
+          ],
+        ],
+        "results": Array [
+          Object {
+            "isThrow": false,
+            "value": undefined,
+          },
+        ],
+      },
+    }
+  }
+  type="click"
+/>
+`;
+
+exports[`DOMListener when not capture, once, or passive when passive changed should remove original listener and add new listener 1`] = `
+<DOMListener
+  listener={[MockFunction]}
+  passive={true}
+  target={
+    Object {
+      "addEventListener": [MockFunction] {
+        "calls": Array [
+          Array [
+            "click",
+            [MockFunction],
+            false,
+          ],
+          Array [
+            "click",
+            [MockFunction],
+            Object {
+              "capture": undefined,
+              "once": undefined,
+              "passive": true,
+            },
+          ],
+        ],
+        "results": Array [
+          Object {
+            "isThrow": false,
+            "value": undefined,
+          },
+          Object {
+            "isThrow": false,
+            "value": undefined,
+          },
+        ],
+      },
+      "removeEventListener": [MockFunction] {
+        "calls": Array [
+          Array [
+            "click",
+            [MockFunction],
+            false,
+          ],
+        ],
+        "results": Array [
+          Object {
+            "isThrow": false,
+            "value": undefined,
+          },
+        ],
+      },
+    }
+  }
+  type="click"
+/>
+`;
+
+exports[`DOMListener when not capture, once, or passive when target changed should remove original listener and add new listener 1`] = `
+Object {
+  "newTarget": Object {
+    "addEventListener": [MockFunction] {
+      "calls": Array [
+        Array [
+          "click",
+          [MockFunction],
+          false,
+        ],
+      ],
+      "results": Array [
+        Object {
+          "isThrow": false,
+          "value": undefined,
+        },
+      ],
+    },
+    "removeEventListener": [MockFunction],
+  },
+  "target": Object {
+    "addEventListener": [MockFunction] {
+      "calls": Array [
+        Array [
+          "click",
+          [MockFunction],
+          false,
+        ],
+      ],
+      "results": Array [
+        Object {
+          "isThrow": false,
+          "value": undefined,
+        },
+      ],
+    },
+    "removeEventListener": [MockFunction] {
+      "calls": Array [
+        Array [
+          "click",
+          [MockFunction],
+          false,
+        ],
+      ],
+      "results": Array [
+        Object {
+          "isThrow": false,
+          "value": undefined,
+        },
+      ],
+    },
+  },
+  "wrapper": <DOMListener
+    listener={[MockFunction]}
+    target={
+      Object {
+        "addEventListener": [MockFunction] {
+          "calls": Array [
+            Array [
+              "click",
+              [MockFunction],
+              false,
+            ],
+          ],
+          "results": Array [
+            Object {
+              "isThrow": false,
+              "value": undefined,
+            },
+          ],
+        },
+        "removeEventListener": [MockFunction],
+      }
+    }
+    type="click"
+  />,
+}
+`;
+
+exports[`DOMListener when not capture, once, or passive when type changed should remove original listener and add new listener 1`] = `
+<DOMListener
+  listener={[MockFunction]}
+  target={
+    Object {
+      "addEventListener": [MockFunction] {
+        "calls": Array [
+          Array [
+            "click",
+            [MockFunction],
+            false,
+          ],
+          Array [
+            "keyup",
+            [MockFunction],
+            false,
+          ],
+        ],
+        "results": Array [
+          Object {
+            "isThrow": false,
+            "value": undefined,
+          },
+          Object {
+            "isThrow": false,
+            "value": undefined,
+          },
+        ],
+      },
+      "removeEventListener": [MockFunction] {
+        "calls": Array [
+          Array [
+            "click",
+            [MockFunction],
+            false,
+          ],
+        ],
+        "results": Array [
+          Object {
+            "isThrow": false,
+            "value": undefined,
+          },
+        ],
+      },
+    }
+  }
+  type="keyup"
+/>
+`;
+
+exports[`DOMListener when not capture, once, or passive when updated with no changes should not add/remove any listeners 1`] = `
+<DOMListener
+  listener={[MockFunction]}
+  target={
+    Object {
+      "addEventListener": [MockFunction] {
+        "calls": Array [
+          Array [
+            "click",
+            [MockFunction],
+            false,
+          ],
+        ],
+        "results": Array [
+          Object {
+            "isThrow": false,
+            "value": undefined,
+          },
+        ],
+      },
+      "removeEventListener": [MockFunction],
+    }
+  }
+  type="click"
+/>
 `;
 
 exports[`DOMListener when once and passive should function as expected when mounted 1`] = `
@@ -297,6 +2486,12 @@ exports[`DOMListener when once and passive should function as expected when moun
               "passive": true,
             },
           ],
+        ],
+        "results": Array [
+          Object {
+            "isThrow": false,
+            "value": undefined,
+          },
         ],
       },
       "removeEventListener": [MockFunction],
@@ -321,6 +2516,12 @@ Object {
           },
         ],
       ],
+      "results": Array [
+        Object {
+          "isThrow": false,
+          "value": undefined,
+        },
+      ],
     },
     "removeEventListener": [MockFunction] {
       "calls": Array [
@@ -334,10 +2535,467 @@ Object {
           },
         ],
       ],
+      "results": Array [
+        Object {
+          "isThrow": false,
+          "value": undefined,
+        },
+      ],
     },
   },
   "wrapper": "",
 }
+`;
+
+exports[`DOMListener when once and passive when capture changed should remove original listener and add new listener 1`] = `
+<DOMListener
+  capture={true}
+  listener={[MockFunction]}
+  once={true}
+  passive={true}
+  target={
+    Object {
+      "addEventListener": [MockFunction] {
+        "calls": Array [
+          Array [
+            "click",
+            [MockFunction],
+            Object {
+              "capture": undefined,
+              "once": true,
+              "passive": true,
+            },
+          ],
+          Array [
+            "click",
+            [MockFunction],
+            Object {
+              "capture": true,
+              "once": true,
+              "passive": true,
+            },
+          ],
+        ],
+        "results": Array [
+          Object {
+            "isThrow": false,
+            "value": undefined,
+          },
+          Object {
+            "isThrow": false,
+            "value": undefined,
+          },
+        ],
+      },
+      "removeEventListener": [MockFunction] {
+        "calls": Array [
+          Array [
+            "click",
+            [MockFunction],
+            Object {
+              "capture": undefined,
+              "once": true,
+              "passive": true,
+            },
+          ],
+        ],
+        "results": Array [
+          Object {
+            "isThrow": false,
+            "value": undefined,
+          },
+        ],
+      },
+    }
+  }
+  type="click"
+/>
+`;
+
+exports[`DOMListener when once and passive when listener changed should remove original listener and add new listener 1`] = `
+<DOMListener
+  listener={[MockFunction]}
+  once={true}
+  passive={true}
+  target={
+    Object {
+      "addEventListener": [MockFunction] {
+        "calls": Array [
+          Array [
+            "click",
+            [MockFunction],
+            Object {
+              "capture": undefined,
+              "once": true,
+              "passive": true,
+            },
+          ],
+          Array [
+            "click",
+            [MockFunction],
+            Object {
+              "capture": undefined,
+              "once": true,
+              "passive": true,
+            },
+          ],
+        ],
+        "results": Array [
+          Object {
+            "isThrow": false,
+            "value": undefined,
+          },
+          Object {
+            "isThrow": false,
+            "value": undefined,
+          },
+        ],
+      },
+      "removeEventListener": [MockFunction] {
+        "calls": Array [
+          Array [
+            "click",
+            [MockFunction],
+            Object {
+              "capture": undefined,
+              "once": true,
+              "passive": true,
+            },
+          ],
+        ],
+        "results": Array [
+          Object {
+            "isThrow": false,
+            "value": undefined,
+          },
+        ],
+      },
+    }
+  }
+  type="click"
+/>
+`;
+
+exports[`DOMListener when once and passive when once changed should remove original listener and add new listener 1`] = `
+<DOMListener
+  listener={[MockFunction]}
+  once={false}
+  passive={true}
+  target={
+    Object {
+      "addEventListener": [MockFunction] {
+        "calls": Array [
+          Array [
+            "click",
+            [MockFunction],
+            Object {
+              "capture": undefined,
+              "once": true,
+              "passive": true,
+            },
+          ],
+          Array [
+            "click",
+            [MockFunction],
+            Object {
+              "capture": undefined,
+              "once": false,
+              "passive": true,
+            },
+          ],
+        ],
+        "results": Array [
+          Object {
+            "isThrow": false,
+            "value": undefined,
+          },
+          Object {
+            "isThrow": false,
+            "value": undefined,
+          },
+        ],
+      },
+      "removeEventListener": [MockFunction] {
+        "calls": Array [
+          Array [
+            "click",
+            [MockFunction],
+            Object {
+              "capture": undefined,
+              "once": true,
+              "passive": true,
+            },
+          ],
+        ],
+        "results": Array [
+          Object {
+            "isThrow": false,
+            "value": undefined,
+          },
+        ],
+      },
+    }
+  }
+  type="click"
+/>
+`;
+
+exports[`DOMListener when once and passive when passive changed should remove original listener and add new listener 1`] = `
+<DOMListener
+  listener={[MockFunction]}
+  once={true}
+  passive={false}
+  target={
+    Object {
+      "addEventListener": [MockFunction] {
+        "calls": Array [
+          Array [
+            "click",
+            [MockFunction],
+            Object {
+              "capture": undefined,
+              "once": true,
+              "passive": true,
+            },
+          ],
+          Array [
+            "click",
+            [MockFunction],
+            Object {
+              "capture": undefined,
+              "once": true,
+              "passive": false,
+            },
+          ],
+        ],
+        "results": Array [
+          Object {
+            "isThrow": false,
+            "value": undefined,
+          },
+          Object {
+            "isThrow": false,
+            "value": undefined,
+          },
+        ],
+      },
+      "removeEventListener": [MockFunction] {
+        "calls": Array [
+          Array [
+            "click",
+            [MockFunction],
+            Object {
+              "capture": undefined,
+              "once": true,
+              "passive": true,
+            },
+          ],
+        ],
+        "results": Array [
+          Object {
+            "isThrow": false,
+            "value": undefined,
+          },
+        ],
+      },
+    }
+  }
+  type="click"
+/>
+`;
+
+exports[`DOMListener when once and passive when target changed should remove original listener and add new listener 1`] = `
+Object {
+  "newTarget": Object {
+    "addEventListener": [MockFunction] {
+      "calls": Array [
+        Array [
+          "click",
+          [MockFunction],
+          Object {
+            "capture": undefined,
+            "once": true,
+            "passive": true,
+          },
+        ],
+      ],
+      "results": Array [
+        Object {
+          "isThrow": false,
+          "value": undefined,
+        },
+      ],
+    },
+    "removeEventListener": [MockFunction],
+  },
+  "target": Object {
+    "addEventListener": [MockFunction] {
+      "calls": Array [
+        Array [
+          "click",
+          [MockFunction],
+          Object {
+            "capture": undefined,
+            "once": true,
+            "passive": true,
+          },
+        ],
+      ],
+      "results": Array [
+        Object {
+          "isThrow": false,
+          "value": undefined,
+        },
+      ],
+    },
+    "removeEventListener": [MockFunction] {
+      "calls": Array [
+        Array [
+          "click",
+          [MockFunction],
+          Object {
+            "capture": undefined,
+            "once": true,
+            "passive": true,
+          },
+        ],
+      ],
+      "results": Array [
+        Object {
+          "isThrow": false,
+          "value": undefined,
+        },
+      ],
+    },
+  },
+  "wrapper": <DOMListener
+    listener={[MockFunction]}
+    once={true}
+    passive={true}
+    target={
+      Object {
+        "addEventListener": [MockFunction] {
+          "calls": Array [
+            Array [
+              "click",
+              [MockFunction],
+              Object {
+                "capture": undefined,
+                "once": true,
+                "passive": true,
+              },
+            ],
+          ],
+          "results": Array [
+            Object {
+              "isThrow": false,
+              "value": undefined,
+            },
+          ],
+        },
+        "removeEventListener": [MockFunction],
+      }
+    }
+    type="click"
+  />,
+}
+`;
+
+exports[`DOMListener when once and passive when type changed should remove original listener and add new listener 1`] = `
+<DOMListener
+  listener={[MockFunction]}
+  once={true}
+  passive={true}
+  target={
+    Object {
+      "addEventListener": [MockFunction] {
+        "calls": Array [
+          Array [
+            "click",
+            [MockFunction],
+            Object {
+              "capture": undefined,
+              "once": true,
+              "passive": true,
+            },
+          ],
+          Array [
+            "keyup",
+            [MockFunction],
+            Object {
+              "capture": undefined,
+              "once": true,
+              "passive": true,
+            },
+          ],
+        ],
+        "results": Array [
+          Object {
+            "isThrow": false,
+            "value": undefined,
+          },
+          Object {
+            "isThrow": false,
+            "value": undefined,
+          },
+        ],
+      },
+      "removeEventListener": [MockFunction] {
+        "calls": Array [
+          Array [
+            "click",
+            [MockFunction],
+            Object {
+              "capture": undefined,
+              "once": true,
+              "passive": true,
+            },
+          ],
+        ],
+        "results": Array [
+          Object {
+            "isThrow": false,
+            "value": undefined,
+          },
+        ],
+      },
+    }
+  }
+  type="keyup"
+/>
+`;
+
+exports[`DOMListener when once and passive when updated with no changes should not add/remove any listeners 1`] = `
+<DOMListener
+  listener={[MockFunction]}
+  once={true}
+  passive={true}
+  target={
+    Object {
+      "addEventListener": [MockFunction] {
+        "calls": Array [
+          Array [
+            "click",
+            [MockFunction],
+            Object {
+              "capture": undefined,
+              "once": true,
+              "passive": true,
+            },
+          ],
+        ],
+        "results": Array [
+          Object {
+            "isThrow": false,
+            "value": undefined,
+          },
+        ],
+      },
+      "removeEventListener": [MockFunction],
+    }
+  }
+  type="click"
+/>
 `;
 
 exports[`DOMListener when once should function as expected when mounted 1`] = `
@@ -357,6 +3015,12 @@ exports[`DOMListener when once should function as expected when mounted 1`] = `
               "passive": undefined,
             },
           ],
+        ],
+        "results": Array [
+          Object {
+            "isThrow": false,
+            "value": undefined,
+          },
         ],
       },
       "removeEventListener": [MockFunction],
@@ -381,6 +3045,12 @@ Object {
           },
         ],
       ],
+      "results": Array [
+        Object {
+          "isThrow": false,
+          "value": undefined,
+        },
+      ],
     },
     "removeEventListener": [MockFunction] {
       "calls": Array [
@@ -394,10 +3064,461 @@ Object {
           },
         ],
       ],
+      "results": Array [
+        Object {
+          "isThrow": false,
+          "value": undefined,
+        },
+      ],
     },
   },
   "wrapper": "",
 }
+`;
+
+exports[`DOMListener when once when capture changed should remove original listener and add new listener 1`] = `
+<DOMListener
+  capture={true}
+  listener={[MockFunction]}
+  once={true}
+  target={
+    Object {
+      "addEventListener": [MockFunction] {
+        "calls": Array [
+          Array [
+            "click",
+            [MockFunction],
+            Object {
+              "capture": undefined,
+              "once": true,
+              "passive": undefined,
+            },
+          ],
+          Array [
+            "click",
+            [MockFunction],
+            Object {
+              "capture": true,
+              "once": true,
+              "passive": undefined,
+            },
+          ],
+        ],
+        "results": Array [
+          Object {
+            "isThrow": false,
+            "value": undefined,
+          },
+          Object {
+            "isThrow": false,
+            "value": undefined,
+          },
+        ],
+      },
+      "removeEventListener": [MockFunction] {
+        "calls": Array [
+          Array [
+            "click",
+            [MockFunction],
+            Object {
+              "capture": undefined,
+              "once": true,
+              "passive": undefined,
+            },
+          ],
+        ],
+        "results": Array [
+          Object {
+            "isThrow": false,
+            "value": undefined,
+          },
+        ],
+      },
+    }
+  }
+  type="click"
+/>
+`;
+
+exports[`DOMListener when once when listener changed should remove original listener and add new listener 1`] = `
+<DOMListener
+  listener={[MockFunction]}
+  once={true}
+  target={
+    Object {
+      "addEventListener": [MockFunction] {
+        "calls": Array [
+          Array [
+            "click",
+            [MockFunction],
+            Object {
+              "capture": undefined,
+              "once": true,
+              "passive": undefined,
+            },
+          ],
+          Array [
+            "click",
+            [MockFunction],
+            Object {
+              "capture": undefined,
+              "once": true,
+              "passive": undefined,
+            },
+          ],
+        ],
+        "results": Array [
+          Object {
+            "isThrow": false,
+            "value": undefined,
+          },
+          Object {
+            "isThrow": false,
+            "value": undefined,
+          },
+        ],
+      },
+      "removeEventListener": [MockFunction] {
+        "calls": Array [
+          Array [
+            "click",
+            [MockFunction],
+            Object {
+              "capture": undefined,
+              "once": true,
+              "passive": undefined,
+            },
+          ],
+        ],
+        "results": Array [
+          Object {
+            "isThrow": false,
+            "value": undefined,
+          },
+        ],
+      },
+    }
+  }
+  type="click"
+/>
+`;
+
+exports[`DOMListener when once when once changed should remove original listener and add new listener 1`] = `
+<DOMListener
+  listener={[MockFunction]}
+  once={false}
+  target={
+    Object {
+      "addEventListener": [MockFunction] {
+        "calls": Array [
+          Array [
+            "click",
+            [MockFunction],
+            Object {
+              "capture": undefined,
+              "once": true,
+              "passive": undefined,
+            },
+          ],
+          Array [
+            "click",
+            [MockFunction],
+            Object {
+              "capture": undefined,
+              "once": false,
+              "passive": undefined,
+            },
+          ],
+        ],
+        "results": Array [
+          Object {
+            "isThrow": false,
+            "value": undefined,
+          },
+          Object {
+            "isThrow": false,
+            "value": undefined,
+          },
+        ],
+      },
+      "removeEventListener": [MockFunction] {
+        "calls": Array [
+          Array [
+            "click",
+            [MockFunction],
+            Object {
+              "capture": undefined,
+              "once": true,
+              "passive": undefined,
+            },
+          ],
+        ],
+        "results": Array [
+          Object {
+            "isThrow": false,
+            "value": undefined,
+          },
+        ],
+      },
+    }
+  }
+  type="click"
+/>
+`;
+
+exports[`DOMListener when once when passive changed should remove original listener and add new listener 1`] = `
+<DOMListener
+  listener={[MockFunction]}
+  once={true}
+  passive={true}
+  target={
+    Object {
+      "addEventListener": [MockFunction] {
+        "calls": Array [
+          Array [
+            "click",
+            [MockFunction],
+            Object {
+              "capture": undefined,
+              "once": true,
+              "passive": undefined,
+            },
+          ],
+          Array [
+            "click",
+            [MockFunction],
+            Object {
+              "capture": undefined,
+              "once": true,
+              "passive": true,
+            },
+          ],
+        ],
+        "results": Array [
+          Object {
+            "isThrow": false,
+            "value": undefined,
+          },
+          Object {
+            "isThrow": false,
+            "value": undefined,
+          },
+        ],
+      },
+      "removeEventListener": [MockFunction] {
+        "calls": Array [
+          Array [
+            "click",
+            [MockFunction],
+            Object {
+              "capture": undefined,
+              "once": true,
+              "passive": undefined,
+            },
+          ],
+        ],
+        "results": Array [
+          Object {
+            "isThrow": false,
+            "value": undefined,
+          },
+        ],
+      },
+    }
+  }
+  type="click"
+/>
+`;
+
+exports[`DOMListener when once when target changed should remove original listener and add new listener 1`] = `
+Object {
+  "newTarget": Object {
+    "addEventListener": [MockFunction] {
+      "calls": Array [
+        Array [
+          "click",
+          [MockFunction],
+          Object {
+            "capture": undefined,
+            "once": true,
+            "passive": undefined,
+          },
+        ],
+      ],
+      "results": Array [
+        Object {
+          "isThrow": false,
+          "value": undefined,
+        },
+      ],
+    },
+    "removeEventListener": [MockFunction],
+  },
+  "target": Object {
+    "addEventListener": [MockFunction] {
+      "calls": Array [
+        Array [
+          "click",
+          [MockFunction],
+          Object {
+            "capture": undefined,
+            "once": true,
+            "passive": undefined,
+          },
+        ],
+      ],
+      "results": Array [
+        Object {
+          "isThrow": false,
+          "value": undefined,
+        },
+      ],
+    },
+    "removeEventListener": [MockFunction] {
+      "calls": Array [
+        Array [
+          "click",
+          [MockFunction],
+          Object {
+            "capture": undefined,
+            "once": true,
+            "passive": undefined,
+          },
+        ],
+      ],
+      "results": Array [
+        Object {
+          "isThrow": false,
+          "value": undefined,
+        },
+      ],
+    },
+  },
+  "wrapper": <DOMListener
+    listener={[MockFunction]}
+    once={true}
+    target={
+      Object {
+        "addEventListener": [MockFunction] {
+          "calls": Array [
+            Array [
+              "click",
+              [MockFunction],
+              Object {
+                "capture": undefined,
+                "once": true,
+                "passive": undefined,
+              },
+            ],
+          ],
+          "results": Array [
+            Object {
+              "isThrow": false,
+              "value": undefined,
+            },
+          ],
+        },
+        "removeEventListener": [MockFunction],
+      }
+    }
+    type="click"
+  />,
+}
+`;
+
+exports[`DOMListener when once when type changed should remove original listener and add new listener 1`] = `
+<DOMListener
+  listener={[MockFunction]}
+  once={true}
+  target={
+    Object {
+      "addEventListener": [MockFunction] {
+        "calls": Array [
+          Array [
+            "click",
+            [MockFunction],
+            Object {
+              "capture": undefined,
+              "once": true,
+              "passive": undefined,
+            },
+          ],
+          Array [
+            "keyup",
+            [MockFunction],
+            Object {
+              "capture": undefined,
+              "once": true,
+              "passive": undefined,
+            },
+          ],
+        ],
+        "results": Array [
+          Object {
+            "isThrow": false,
+            "value": undefined,
+          },
+          Object {
+            "isThrow": false,
+            "value": undefined,
+          },
+        ],
+      },
+      "removeEventListener": [MockFunction] {
+        "calls": Array [
+          Array [
+            "click",
+            [MockFunction],
+            Object {
+              "capture": undefined,
+              "once": true,
+              "passive": undefined,
+            },
+          ],
+        ],
+        "results": Array [
+          Object {
+            "isThrow": false,
+            "value": undefined,
+          },
+        ],
+      },
+    }
+  }
+  type="keyup"
+/>
+`;
+
+exports[`DOMListener when once when updated with no changes should not add/remove any listeners 1`] = `
+<DOMListener
+  listener={[MockFunction]}
+  once={true}
+  target={
+    Object {
+      "addEventListener": [MockFunction] {
+        "calls": Array [
+          Array [
+            "click",
+            [MockFunction],
+            Object {
+              "capture": undefined,
+              "once": true,
+              "passive": undefined,
+            },
+          ],
+        ],
+        "results": Array [
+          Object {
+            "isThrow": false,
+            "value": undefined,
+          },
+        ],
+      },
+      "removeEventListener": [MockFunction],
+    }
+  }
+  type="click"
+/>
 `;
 
 exports[`DOMListener when passive should function as expected when mounted 1`] = `
@@ -417,6 +3538,12 @@ exports[`DOMListener when passive should function as expected when mounted 1`] =
               "passive": true,
             },
           ],
+        ],
+        "results": Array [
+          Object {
+            "isThrow": false,
+            "value": undefined,
+          },
         ],
       },
       "removeEventListener": [MockFunction],
@@ -441,6 +3568,12 @@ Object {
           },
         ],
       ],
+      "results": Array [
+        Object {
+          "isThrow": false,
+          "value": undefined,
+        },
+      ],
     },
     "removeEventListener": [MockFunction] {
       "calls": Array [
@@ -454,8 +3587,459 @@ Object {
           },
         ],
       ],
+      "results": Array [
+        Object {
+          "isThrow": false,
+          "value": undefined,
+        },
+      ],
     },
   },
   "wrapper": "",
 }
+`;
+
+exports[`DOMListener when passive when capture changed should remove original listener and add new listener 1`] = `
+<DOMListener
+  capture={true}
+  listener={[MockFunction]}
+  passive={true}
+  target={
+    Object {
+      "addEventListener": [MockFunction] {
+        "calls": Array [
+          Array [
+            "click",
+            [MockFunction],
+            Object {
+              "capture": undefined,
+              "once": undefined,
+              "passive": true,
+            },
+          ],
+          Array [
+            "click",
+            [MockFunction],
+            Object {
+              "capture": true,
+              "once": undefined,
+              "passive": true,
+            },
+          ],
+        ],
+        "results": Array [
+          Object {
+            "isThrow": false,
+            "value": undefined,
+          },
+          Object {
+            "isThrow": false,
+            "value": undefined,
+          },
+        ],
+      },
+      "removeEventListener": [MockFunction] {
+        "calls": Array [
+          Array [
+            "click",
+            [MockFunction],
+            Object {
+              "capture": undefined,
+              "once": undefined,
+              "passive": true,
+            },
+          ],
+        ],
+        "results": Array [
+          Object {
+            "isThrow": false,
+            "value": undefined,
+          },
+        ],
+      },
+    }
+  }
+  type="click"
+/>
+`;
+
+exports[`DOMListener when passive when listener changed should remove original listener and add new listener 1`] = `
+<DOMListener
+  listener={[MockFunction]}
+  passive={true}
+  target={
+    Object {
+      "addEventListener": [MockFunction] {
+        "calls": Array [
+          Array [
+            "click",
+            [MockFunction],
+            Object {
+              "capture": undefined,
+              "once": undefined,
+              "passive": true,
+            },
+          ],
+          Array [
+            "click",
+            [MockFunction],
+            Object {
+              "capture": undefined,
+              "once": undefined,
+              "passive": true,
+            },
+          ],
+        ],
+        "results": Array [
+          Object {
+            "isThrow": false,
+            "value": undefined,
+          },
+          Object {
+            "isThrow": false,
+            "value": undefined,
+          },
+        ],
+      },
+      "removeEventListener": [MockFunction] {
+        "calls": Array [
+          Array [
+            "click",
+            [MockFunction],
+            Object {
+              "capture": undefined,
+              "once": undefined,
+              "passive": true,
+            },
+          ],
+        ],
+        "results": Array [
+          Object {
+            "isThrow": false,
+            "value": undefined,
+          },
+        ],
+      },
+    }
+  }
+  type="click"
+/>
+`;
+
+exports[`DOMListener when passive when once changed should remove original listener and add new listener 1`] = `
+<DOMListener
+  listener={[MockFunction]}
+  once={true}
+  passive={true}
+  target={
+    Object {
+      "addEventListener": [MockFunction] {
+        "calls": Array [
+          Array [
+            "click",
+            [MockFunction],
+            Object {
+              "capture": undefined,
+              "once": undefined,
+              "passive": true,
+            },
+          ],
+          Array [
+            "click",
+            [MockFunction],
+            Object {
+              "capture": undefined,
+              "once": true,
+              "passive": true,
+            },
+          ],
+        ],
+        "results": Array [
+          Object {
+            "isThrow": false,
+            "value": undefined,
+          },
+          Object {
+            "isThrow": false,
+            "value": undefined,
+          },
+        ],
+      },
+      "removeEventListener": [MockFunction] {
+        "calls": Array [
+          Array [
+            "click",
+            [MockFunction],
+            Object {
+              "capture": undefined,
+              "once": undefined,
+              "passive": true,
+            },
+          ],
+        ],
+        "results": Array [
+          Object {
+            "isThrow": false,
+            "value": undefined,
+          },
+        ],
+      },
+    }
+  }
+  type="click"
+/>
+`;
+
+exports[`DOMListener when passive when passive changed should remove original listener and add new listener 1`] = `
+<DOMListener
+  listener={[MockFunction]}
+  passive={false}
+  target={
+    Object {
+      "addEventListener": [MockFunction] {
+        "calls": Array [
+          Array [
+            "click",
+            [MockFunction],
+            Object {
+              "capture": undefined,
+              "once": undefined,
+              "passive": true,
+            },
+          ],
+          Array [
+            "click",
+            [MockFunction],
+            Object {
+              "capture": undefined,
+              "once": undefined,
+              "passive": false,
+            },
+          ],
+        ],
+        "results": Array [
+          Object {
+            "isThrow": false,
+            "value": undefined,
+          },
+          Object {
+            "isThrow": false,
+            "value": undefined,
+          },
+        ],
+      },
+      "removeEventListener": [MockFunction] {
+        "calls": Array [
+          Array [
+            "click",
+            [MockFunction],
+            Object {
+              "capture": undefined,
+              "once": undefined,
+              "passive": true,
+            },
+          ],
+        ],
+        "results": Array [
+          Object {
+            "isThrow": false,
+            "value": undefined,
+          },
+        ],
+      },
+    }
+  }
+  type="click"
+/>
+`;
+
+exports[`DOMListener when passive when target changed should remove original listener and add new listener 1`] = `
+Object {
+  "newTarget": Object {
+    "addEventListener": [MockFunction] {
+      "calls": Array [
+        Array [
+          "click",
+          [MockFunction],
+          Object {
+            "capture": undefined,
+            "once": undefined,
+            "passive": true,
+          },
+        ],
+      ],
+      "results": Array [
+        Object {
+          "isThrow": false,
+          "value": undefined,
+        },
+      ],
+    },
+    "removeEventListener": [MockFunction],
+  },
+  "target": Object {
+    "addEventListener": [MockFunction] {
+      "calls": Array [
+        Array [
+          "click",
+          [MockFunction],
+          Object {
+            "capture": undefined,
+            "once": undefined,
+            "passive": true,
+          },
+        ],
+      ],
+      "results": Array [
+        Object {
+          "isThrow": false,
+          "value": undefined,
+        },
+      ],
+    },
+    "removeEventListener": [MockFunction] {
+      "calls": Array [
+        Array [
+          "click",
+          [MockFunction],
+          Object {
+            "capture": undefined,
+            "once": undefined,
+            "passive": true,
+          },
+        ],
+      ],
+      "results": Array [
+        Object {
+          "isThrow": false,
+          "value": undefined,
+        },
+      ],
+    },
+  },
+  "wrapper": <DOMListener
+    listener={[MockFunction]}
+    passive={true}
+    target={
+      Object {
+        "addEventListener": [MockFunction] {
+          "calls": Array [
+            Array [
+              "click",
+              [MockFunction],
+              Object {
+                "capture": undefined,
+                "once": undefined,
+                "passive": true,
+              },
+            ],
+          ],
+          "results": Array [
+            Object {
+              "isThrow": false,
+              "value": undefined,
+            },
+          ],
+        },
+        "removeEventListener": [MockFunction],
+      }
+    }
+    type="click"
+  />,
+}
+`;
+
+exports[`DOMListener when passive when type changed should remove original listener and add new listener 1`] = `
+<DOMListener
+  listener={[MockFunction]}
+  passive={true}
+  target={
+    Object {
+      "addEventListener": [MockFunction] {
+        "calls": Array [
+          Array [
+            "click",
+            [MockFunction],
+            Object {
+              "capture": undefined,
+              "once": undefined,
+              "passive": true,
+            },
+          ],
+          Array [
+            "keyup",
+            [MockFunction],
+            Object {
+              "capture": undefined,
+              "once": undefined,
+              "passive": true,
+            },
+          ],
+        ],
+        "results": Array [
+          Object {
+            "isThrow": false,
+            "value": undefined,
+          },
+          Object {
+            "isThrow": false,
+            "value": undefined,
+          },
+        ],
+      },
+      "removeEventListener": [MockFunction] {
+        "calls": Array [
+          Array [
+            "click",
+            [MockFunction],
+            Object {
+              "capture": undefined,
+              "once": undefined,
+              "passive": true,
+            },
+          ],
+        ],
+        "results": Array [
+          Object {
+            "isThrow": false,
+            "value": undefined,
+          },
+        ],
+      },
+    }
+  }
+  type="keyup"
+/>
+`;
+
+exports[`DOMListener when passive when updated with no changes should not add/remove any listeners 1`] = `
+<DOMListener
+  listener={[MockFunction]}
+  passive={true}
+  target={
+    Object {
+      "addEventListener": [MockFunction] {
+        "calls": Array [
+          Array [
+            "click",
+            [MockFunction],
+            Object {
+              "capture": undefined,
+              "once": undefined,
+              "passive": true,
+            },
+          ],
+        ],
+        "results": Array [
+          Object {
+            "isThrow": false,
+            "value": undefined,
+          },
+        ],
+      },
+      "removeEventListener": [MockFunction],
+    }
+  }
+  type="click"
+/>
 `;
