@@ -1,4 +1,4 @@
-import DOMListener from '../index'
+import {DOMListener} from '../index'
 import {mount} from 'enzyme'
 import React from 'react'
 
@@ -65,6 +65,83 @@ describe('DOMListener', () => {
       it('should function as expected when unmounted', () => {
         wrapper.unmount()
         expect({target, wrapper}).toMatchSnapshot()
+      })
+
+      describe('when capture changed', () => {
+        beforeEach(() => {
+          wrapper.setProps({capture: !props.capture})
+        })
+
+        it('should remove original listener and add new listener', () => {
+          expect(wrapper).toMatchSnapshot()
+        })
+      })
+
+      describe('when listener changed', () => {
+        beforeEach(() => {
+          wrapper.setProps({listener: jest.fn()})
+        })
+
+        it('should remove original listener and add new listener', () => {
+          expect(wrapper).toMatchSnapshot()
+        })
+      })
+
+      describe('when once changed', () => {
+        beforeEach(() => {
+          wrapper.setProps({once: !props.once})
+        })
+
+        it('should remove original listener and add new listener', () => {
+          expect(wrapper).toMatchSnapshot()
+        })
+      })
+
+      describe('when passive changed', () => {
+        beforeEach(() => {
+          wrapper.setProps({passive: !props.passive})
+        })
+
+        it('should remove original listener and add new listener', () => {
+          expect(wrapper).toMatchSnapshot()
+        })
+      })
+
+      describe('when target changed', () => {
+        let newTarget
+
+        beforeEach(() => {
+          newTarget = {
+            addEventListener: jest.fn(),
+            removeEventListener: jest.fn(),
+          }
+
+          wrapper.setProps({target: newTarget})
+        })
+
+        it('should remove original listener and add new listener', () => {
+          expect({newTarget, target, wrapper}).toMatchSnapshot()
+        })
+      })
+
+      describe('when type changed', () => {
+        beforeEach(() => {
+          wrapper.setProps({type: 'keyup'})
+        })
+
+        it('should remove original listener and add new listener', () => {
+          expect(wrapper).toMatchSnapshot()
+        })
+      })
+
+      describe('when updated with no changes', () => {
+        beforeEach(() => {
+          wrapper.setProps({})
+        })
+
+        it('should not add/remove any listeners', () => {
+          expect(wrapper).toMatchSnapshot()
+        })
       })
     })
   })

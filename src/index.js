@@ -1,8 +1,11 @@
 /**
+ * NOTE: Not typing target property to "EventTarget" because it causes issues
+ * in the generated Flow types that are output to the lib directory.
+ *
  * @flow
  */
 
-import React, {type Node} from 'react'
+import React from 'react'
 
 type DOMListenerProps =
   | {|
@@ -10,7 +13,7 @@ type DOMListenerProps =
       listener: AnimationEventListener,
       once?: boolean,
       passive?: boolean,
-      target: EventTarget,
+      target: any, // eslint-disable-line flowtype/no-weak-types
       type: AnimationEventTypes,
     |}
   | {|
@@ -18,7 +21,7 @@ type DOMListenerProps =
       listener: DragEventListener,
       once?: boolean,
       passive?: boolean,
-      target: EventTarget,
+      target: any, // eslint-disable-line flowtype/no-weak-types
       type: DragEventTypes,
     |}
   | {|
@@ -26,7 +29,7 @@ type DOMListenerProps =
       listener: KeyboardEventListener,
       once?: boolean,
       passive?: boolean,
-      target: EventTarget,
+      target: any, // eslint-disable-line flowtype/no-weak-types
       type: KeyboardEventTypes,
     |}
   | {|
@@ -34,7 +37,7 @@ type DOMListenerProps =
       listener: MouseEventListener,
       once?: boolean,
       passive?: boolean,
-      target: EventTarget,
+      target: any, // eslint-disable-line flowtype/no-weak-types
       type: MouseEventTypes,
     |}
   | {|
@@ -42,7 +45,7 @@ type DOMListenerProps =
       listener: ProgressEventListener,
       once?: boolean,
       passive?: boolean,
-      target: EventTarget,
+      target: any, // eslint-disable-line flowtype/no-weak-types
       type: ProgressEventTypes,
     |}
   | {|
@@ -50,7 +53,7 @@ type DOMListenerProps =
       listener: TouchEventListener,
       once?: boolean,
       passive?: boolean,
-      target: EventTarget,
+      target: any, // eslint-disable-line flowtype/no-weak-types
       type: TouchEventTypes,
     |}
   | {|
@@ -58,7 +61,7 @@ type DOMListenerProps =
       listener: WheelEventListener,
       once?: boolean,
       passive?: boolean,
-      target: EventTarget,
+      target: any, // eslint-disable-line flowtype/no-weak-types
       type: WheelEventTypes,
     |}
   | {|
@@ -66,7 +69,7 @@ type DOMListenerProps =
       listener: EventListener,
       once?: boolean,
       passive?: boolean,
-      target: EventTarget,
+      target: any, // eslint-disable-line flowtype/no-weak-types
       type: string,
     |}
 
@@ -74,7 +77,27 @@ type DOMListenerState = {|
   options: EventListenerOptionsOrUseCapture,
 |}
 
-export default class DOMListener extends React.Component<
+/* eslint-disable flowtype/no-weak-types */
+function addListener(
+  target: any,
+  type: any,
+  listener: any,
+  options: EventListenerOptionsOrUseCapture,
+) {
+  target.addEventListener(type, listener, options)
+}
+
+function removeListener(
+  target: any,
+  type: any,
+  listener: any,
+  options: EventListenerOptionsOrUseCapture,
+) {
+  target.removeEventListener(type, listener, options)
+}
+/* eslint-enable flowtype/no-weak-types */
+
+export class DOMListener extends React.Component<
   DOMListenerProps,
   DOMListenerState,
 > {
@@ -105,19 +128,38 @@ export default class DOMListener extends React.Component<
 
   componentDidMount() {
     const {listener, target, type} = this.props
+    addListener(target, type, listener, this.state.options)
+  }
 
-    // eslint-disable-next-line flowtype/no-weak-types
-    target.addEventListener(type, (listener: any), this.state.options)
+  componentDidUpdate(prevProps: DOMListenerProps, prevState: DOMListenerState) {
+    const {capture, listener, once, passive, target, type} = this.props
+    const {options} = this.state
+
+    if (
+      capture !== prevProps.capture ||
+      listener !== prevProps.listener ||
+      once !== prevProps.once ||
+      passive !== prevProps.passive ||
+      target !== prevProps.target ||
+      type !== prevProps.type
+    ) {
+      removeListener(
+        prevProps.target,
+        prevProps.type,
+        prevProps.listener,
+        prevState.options,
+      )
+
+      addListener(target, type, listener, options)
+    }
   }
 
   componentWillUnmount() {
     const {listener, target, type} = this.props
-
-    // eslint-disable-next-line flowtype/no-weak-types
-    target.removeEventListener(type, (listener: any), this.state.options)
+    removeListener(target, type, listener, this.state.options)
   }
 
-  render(): Node {
+  render(): null {
     return null
   }
 }
