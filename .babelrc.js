@@ -4,14 +4,7 @@ module.exports = {
     '@babel/plugin-syntax-object-rest-spread'
   ],
   presets: [
-    [
-      '@babel/env',
-      {
-        targets: {
-          node: '4'
-        }
-      }
-    ],
+    '@babel/env', // By omitting "targets" config option we get ES5
     '@babel/flow',
     '@babel/react'
   ]
