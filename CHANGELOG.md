@@ -1,3 +1,8 @@
+# 1.0.3 (2018-06-02)
+
+*   The previous release was attempting to fix issues with ES2015 by targeting Node 4 instead of Node 6 but that didn't actually fully generate ES5 code. This change should fix that.
+
+
 # 1.0.2 (2018-06-02)
 
 *   Switched build from targeting Node 6 to Node 5 in order to not have classes in final output. There was an issue consuming this project in a project using [create-react-app](https://github.com/facebook/create-react-app) because it isn't outputting ES5.
