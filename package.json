@@ -1,6 +1,6 @@
 {
   "name": "react-domlistener",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "React component for auto adding/removing event listeners during component life cycle.",
   "main": "lib/index.js",
   "files": [
