@@ -1,3 +1,8 @@
+# 1.0.4 (2018-06-06)
+
+*   Please add a description of your change here, it will be automatically prepended to the `CHANGELOG.md` file.
+
+
 # 1.0.3 (2018-06-02)
 
 *   The previous release was attempting to fix issues with ES2015 by targeting Node 4 instead of Node 6 but that didn't actually fully generate ES5 code. This change should fix that.
