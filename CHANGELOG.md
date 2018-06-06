@@ -1,3 +1,8 @@
+# 1.0.5 (2018-06-06)
+
+*   Remove `engines` from `package.json`
+
+
 # 1.0.4 (2018-06-06)
 
 *   Please add a description of your change here, it will be automatically prepended to the `CHANGELOG.md` file.
