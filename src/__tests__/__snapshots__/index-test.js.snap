@@ -75,7 +75,7 @@ Object {
       ],
     },
   },
-  "wrapper": "",
+  "wrapper": null,
 }
 `;
 
@@ -605,7 +605,7 @@ Object {
       ],
     },
   },
-  "wrapper": "",
+  "wrapper": null,
 }
 `;
 
@@ -1122,7 +1122,7 @@ Object {
       ],
     },
   },
-  "wrapper": "",
+  "wrapper": null,
 }
 `;
 
@@ -1575,7 +1575,7 @@ Object {
       ],
     },
   },
-  "wrapper": "",
+  "wrapper": null,
 }
 `;
 
@@ -2097,7 +2097,7 @@ Object {
       ],
     },
   },
-  "wrapper": "",
+  "wrapper": null,
 }
 `;
 
@@ -2543,7 +2543,7 @@ Object {
       ],
     },
   },
-  "wrapper": "",
+  "wrapper": null,
 }
 `;
 
@@ -3072,7 +3072,7 @@ Object {
       ],
     },
   },
-  "wrapper": "",
+  "wrapper": null,
 }
 `;
 
@@ -3595,7 +3595,7 @@ Object {
       ],
     },
   },
-  "wrapper": "",
+  "wrapper": null,
 }
 `;
 
