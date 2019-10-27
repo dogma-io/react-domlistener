@@ -21,7 +21,7 @@ exports[`DOMListener when capture and once should function as expected when moun
         ],
         "results": Array [
           Object {
-            "isThrow": false,
+            "type": "return",
             "value": undefined,
           },
         ],
@@ -50,7 +50,7 @@ Object {
       ],
       "results": Array [
         Object {
-          "isThrow": false,
+          "type": "return",
           "value": undefined,
         },
       ],
@@ -69,7 +69,7 @@ Object {
       ],
       "results": Array [
         Object {
-          "isThrow": false,
+          "type": "return",
           "value": undefined,
         },
       ],
@@ -109,11 +109,11 @@ exports[`DOMListener when capture and once when capture changed should remove or
         ],
         "results": Array [
           Object {
-            "isThrow": false,
+            "type": "return",
             "value": undefined,
           },
           Object {
-            "isThrow": false,
+            "type": "return",
             "value": undefined,
           },
         ],
@@ -132,7 +132,7 @@ exports[`DOMListener when capture and once when capture changed should remove or
         ],
         "results": Array [
           Object {
-            "isThrow": false,
+            "type": "return",
             "value": undefined,
           },
         ],
@@ -173,11 +173,11 @@ exports[`DOMListener when capture and once when listener changed should remove o
         ],
         "results": Array [
           Object {
-            "isThrow": false,
+            "type": "return",
             "value": undefined,
           },
           Object {
-            "isThrow": false,
+            "type": "return",
             "value": undefined,
           },
         ],
@@ -196,7 +196,7 @@ exports[`DOMListener when capture and once when listener changed should remove o
         ],
         "results": Array [
           Object {
-            "isThrow": false,
+            "type": "return",
             "value": undefined,
           },
         ],
@@ -237,11 +237,11 @@ exports[`DOMListener when capture and once when once changed should remove origi
         ],
         "results": Array [
           Object {
-            "isThrow": false,
+            "type": "return",
             "value": undefined,
           },
           Object {
-            "isThrow": false,
+            "type": "return",
             "value": undefined,
           },
         ],
@@ -260,7 +260,7 @@ exports[`DOMListener when capture and once when once changed should remove origi
         ],
         "results": Array [
           Object {
-            "isThrow": false,
+            "type": "return",
             "value": undefined,
           },
         ],
@@ -302,11 +302,11 @@ exports[`DOMListener when capture and once when passive changed should remove or
         ],
         "results": Array [
           Object {
-            "isThrow": false,
+            "type": "return",
             "value": undefined,
           },
           Object {
-            "isThrow": false,
+            "type": "return",
             "value": undefined,
           },
         ],
@@ -325,7 +325,7 @@ exports[`DOMListener when capture and once when passive changed should remove or
         ],
         "results": Array [
           Object {
-            "isThrow": false,
+            "type": "return",
             "value": undefined,
           },
         ],
@@ -353,7 +353,7 @@ Object {
       ],
       "results": Array [
         Object {
-          "isThrow": false,
+          "type": "return",
           "value": undefined,
         },
       ],
@@ -375,7 +375,7 @@ Object {
       ],
       "results": Array [
         Object {
-          "isThrow": false,
+          "type": "return",
           "value": undefined,
         },
       ],
@@ -394,7 +394,7 @@ Object {
       ],
       "results": Array [
         Object {
-          "isThrow": false,
+          "type": "return",
           "value": undefined,
         },
       ],
@@ -420,7 +420,7 @@ Object {
           ],
           "results": Array [
             Object {
-              "isThrow": false,
+              "type": "return",
               "value": undefined,
             },
           ],
@@ -463,11 +463,11 @@ exports[`DOMListener when capture and once when type changed should remove origi
         ],
         "results": Array [
           Object {
-            "isThrow": false,
+            "type": "return",
             "value": undefined,
           },
           Object {
-            "isThrow": false,
+            "type": "return",
             "value": undefined,
           },
         ],
@@ -486,7 +486,7 @@ exports[`DOMListener when capture and once when type changed should remove origi
         ],
         "results": Array [
           Object {
-            "isThrow": false,
+            "type": "return",
             "value": undefined,
           },
         ],
@@ -518,7 +518,7 @@ exports[`DOMListener when capture and once when updated with no changes should n
         ],
         "results": Array [
           Object {
-            "isThrow": false,
+            "type": "return",
             "value": undefined,
           },
         ],
@@ -551,7 +551,7 @@ exports[`DOMListener when capture and passive should function as expected when m
         ],
         "results": Array [
           Object {
-            "isThrow": false,
+            "type": "return",
             "value": undefined,
           },
         ],
@@ -580,7 +580,7 @@ Object {
       ],
       "results": Array [
         Object {
-          "isThrow": false,
+          "type": "return",
           "value": undefined,
         },
       ],
@@ -599,7 +599,7 @@ Object {
       ],
       "results": Array [
         Object {
-          "isThrow": false,
+          "type": "return",
           "value": undefined,
         },
       ],
@@ -639,11 +639,11 @@ exports[`DOMListener when capture and passive when capture changed should remove
         ],
         "results": Array [
           Object {
-            "isThrow": false,
+            "type": "return",
             "value": undefined,
           },
           Object {
-            "isThrow": false,
+            "type": "return",
             "value": undefined,
           },
         ],
@@ -662,7 +662,7 @@ exports[`DOMListener when capture and passive when capture changed should remove
         ],
         "results": Array [
           Object {
-            "isThrow": false,
+            "type": "return",
             "value": undefined,
           },
         ],
@@ -703,11 +703,11 @@ exports[`DOMListener when capture and passive when listener changed should remov
         ],
         "results": Array [
           Object {
-            "isThrow": false,
+            "type": "return",
             "value": undefined,
           },
           Object {
-            "isThrow": false,
+            "type": "return",
             "value": undefined,
           },
         ],
@@ -726,7 +726,7 @@ exports[`DOMListener when capture and passive when listener changed should remov
         ],
         "results": Array [
           Object {
-            "isThrow": false,
+            "type": "return",
             "value": undefined,
           },
         ],
@@ -768,11 +768,11 @@ exports[`DOMListener when capture and passive when once changed should remove or
         ],
         "results": Array [
           Object {
-            "isThrow": false,
+            "type": "return",
             "value": undefined,
           },
           Object {
-            "isThrow": false,
+            "type": "return",
             "value": undefined,
           },
         ],
@@ -791,7 +791,7 @@ exports[`DOMListener when capture and passive when once changed should remove or
         ],
         "results": Array [
           Object {
-            "isThrow": false,
+            "type": "return",
             "value": undefined,
           },
         ],
@@ -832,11 +832,11 @@ exports[`DOMListener when capture and passive when passive changed should remove
         ],
         "results": Array [
           Object {
-            "isThrow": false,
+            "type": "return",
             "value": undefined,
           },
           Object {
-            "isThrow": false,
+            "type": "return",
             "value": undefined,
           },
         ],
@@ -855,7 +855,7 @@ exports[`DOMListener when capture and passive when passive changed should remove
         ],
         "results": Array [
           Object {
-            "isThrow": false,
+            "type": "return",
             "value": undefined,
           },
         ],
@@ -883,7 +883,7 @@ Object {
       ],
       "results": Array [
         Object {
-          "isThrow": false,
+          "type": "return",
           "value": undefined,
         },
       ],
@@ -905,7 +905,7 @@ Object {
       ],
       "results": Array [
         Object {
-          "isThrow": false,
+          "type": "return",
           "value": undefined,
         },
       ],
@@ -924,7 +924,7 @@ Object {
       ],
       "results": Array [
         Object {
-          "isThrow": false,
+          "type": "return",
           "value": undefined,
         },
       ],
@@ -950,7 +950,7 @@ Object {
           ],
           "results": Array [
             Object {
-              "isThrow": false,
+              "type": "return",
               "value": undefined,
             },
           ],
@@ -993,11 +993,11 @@ exports[`DOMListener when capture and passive when type changed should remove or
         ],
         "results": Array [
           Object {
-            "isThrow": false,
+            "type": "return",
             "value": undefined,
           },
           Object {
-            "isThrow": false,
+            "type": "return",
             "value": undefined,
           },
         ],
@@ -1016,7 +1016,7 @@ exports[`DOMListener when capture and passive when type changed should remove or
         ],
         "results": Array [
           Object {
-            "isThrow": false,
+            "type": "return",
             "value": undefined,
           },
         ],
@@ -1048,7 +1048,7 @@ exports[`DOMListener when capture and passive when updated with no changes shoul
         ],
         "results": Array [
           Object {
-            "isThrow": false,
+            "type": "return",
             "value": undefined,
           },
         ],
@@ -1076,7 +1076,7 @@ exports[`DOMListener when capture should function as expected when mounted 1`] =
         ],
         "results": Array [
           Object {
-            "isThrow": false,
+            "type": "return",
             "value": undefined,
           },
         ],
@@ -1101,7 +1101,7 @@ Object {
       ],
       "results": Array [
         Object {
-          "isThrow": false,
+          "type": "return",
           "value": undefined,
         },
       ],
@@ -1116,7 +1116,7 @@ Object {
       ],
       "results": Array [
         Object {
-          "isThrow": false,
+          "type": "return",
           "value": undefined,
         },
       ],
@@ -1147,11 +1147,11 @@ exports[`DOMListener when capture when capture changed should remove original li
         ],
         "results": Array [
           Object {
-            "isThrow": false,
+            "type": "return",
             "value": undefined,
           },
           Object {
-            "isThrow": false,
+            "type": "return",
             "value": undefined,
           },
         ],
@@ -1166,7 +1166,7 @@ exports[`DOMListener when capture when capture changed should remove original li
         ],
         "results": Array [
           Object {
-            "isThrow": false,
+            "type": "return",
             "value": undefined,
           },
         ],
@@ -1198,11 +1198,11 @@ exports[`DOMListener when capture when listener changed should remove original l
         ],
         "results": Array [
           Object {
-            "isThrow": false,
+            "type": "return",
             "value": undefined,
           },
           Object {
-            "isThrow": false,
+            "type": "return",
             "value": undefined,
           },
         ],
@@ -1217,7 +1217,7 @@ exports[`DOMListener when capture when listener changed should remove original l
         ],
         "results": Array [
           Object {
-            "isThrow": false,
+            "type": "return",
             "value": undefined,
           },
         ],
@@ -1254,11 +1254,11 @@ exports[`DOMListener when capture when once changed should remove original liste
         ],
         "results": Array [
           Object {
-            "isThrow": false,
+            "type": "return",
             "value": undefined,
           },
           Object {
-            "isThrow": false,
+            "type": "return",
             "value": undefined,
           },
         ],
@@ -1273,7 +1273,7 @@ exports[`DOMListener when capture when once changed should remove original liste
         ],
         "results": Array [
           Object {
-            "isThrow": false,
+            "type": "return",
             "value": undefined,
           },
         ],
@@ -1310,11 +1310,11 @@ exports[`DOMListener when capture when passive changed should remove original li
         ],
         "results": Array [
           Object {
-            "isThrow": false,
+            "type": "return",
             "value": undefined,
           },
           Object {
-            "isThrow": false,
+            "type": "return",
             "value": undefined,
           },
         ],
@@ -1329,7 +1329,7 @@ exports[`DOMListener when capture when passive changed should remove original li
         ],
         "results": Array [
           Object {
-            "isThrow": false,
+            "type": "return",
             "value": undefined,
           },
         ],
@@ -1353,7 +1353,7 @@ Object {
       ],
       "results": Array [
         Object {
-          "isThrow": false,
+          "type": "return",
           "value": undefined,
         },
       ],
@@ -1371,7 +1371,7 @@ Object {
       ],
       "results": Array [
         Object {
-          "isThrow": false,
+          "type": "return",
           "value": undefined,
         },
       ],
@@ -1386,7 +1386,7 @@ Object {
       ],
       "results": Array [
         Object {
-          "isThrow": false,
+          "type": "return",
           "value": undefined,
         },
       ],
@@ -1407,7 +1407,7 @@ Object {
           ],
           "results": Array [
             Object {
-              "isThrow": false,
+              "type": "return",
               "value": undefined,
             },
           ],
@@ -1441,11 +1441,11 @@ exports[`DOMListener when capture when type changed should remove original liste
         ],
         "results": Array [
           Object {
-            "isThrow": false,
+            "type": "return",
             "value": undefined,
           },
           Object {
-            "isThrow": false,
+            "type": "return",
             "value": undefined,
           },
         ],
@@ -1460,7 +1460,7 @@ exports[`DOMListener when capture when type changed should remove original liste
         ],
         "results": Array [
           Object {
-            "isThrow": false,
+            "type": "return",
             "value": undefined,
           },
         ],
@@ -1487,7 +1487,7 @@ exports[`DOMListener when capture when updated with no changes should not add/re
         ],
         "results": Array [
           Object {
-            "isThrow": false,
+            "type": "return",
             "value": undefined,
           },
         ],
@@ -1521,7 +1521,7 @@ exports[`DOMListener when capture, once, and passive should function as expected
         ],
         "results": Array [
           Object {
-            "isThrow": false,
+            "type": "return",
             "value": undefined,
           },
         ],
@@ -1550,7 +1550,7 @@ Object {
       ],
       "results": Array [
         Object {
-          "isThrow": false,
+          "type": "return",
           "value": undefined,
         },
       ],
@@ -1569,7 +1569,7 @@ Object {
       ],
       "results": Array [
         Object {
-          "isThrow": false,
+          "type": "return",
           "value": undefined,
         },
       ],
@@ -1610,11 +1610,11 @@ exports[`DOMListener when capture, once, and passive when capture changed should
         ],
         "results": Array [
           Object {
-            "isThrow": false,
+            "type": "return",
             "value": undefined,
           },
           Object {
-            "isThrow": false,
+            "type": "return",
             "value": undefined,
           },
         ],
@@ -1633,7 +1633,7 @@ exports[`DOMListener when capture, once, and passive when capture changed should
         ],
         "results": Array [
           Object {
-            "isThrow": false,
+            "type": "return",
             "value": undefined,
           },
         ],
@@ -1675,11 +1675,11 @@ exports[`DOMListener when capture, once, and passive when listener changed shoul
         ],
         "results": Array [
           Object {
-            "isThrow": false,
+            "type": "return",
             "value": undefined,
           },
           Object {
-            "isThrow": false,
+            "type": "return",
             "value": undefined,
           },
         ],
@@ -1698,7 +1698,7 @@ exports[`DOMListener when capture, once, and passive when listener changed shoul
         ],
         "results": Array [
           Object {
-            "isThrow": false,
+            "type": "return",
             "value": undefined,
           },
         ],
@@ -1740,11 +1740,11 @@ exports[`DOMListener when capture, once, and passive when once changed should re
         ],
         "results": Array [
           Object {
-            "isThrow": false,
+            "type": "return",
             "value": undefined,
           },
           Object {
-            "isThrow": false,
+            "type": "return",
             "value": undefined,
           },
         ],
@@ -1763,7 +1763,7 @@ exports[`DOMListener when capture, once, and passive when once changed should re
         ],
         "results": Array [
           Object {
-            "isThrow": false,
+            "type": "return",
             "value": undefined,
           },
         ],
@@ -1805,11 +1805,11 @@ exports[`DOMListener when capture, once, and passive when passive changed should
         ],
         "results": Array [
           Object {
-            "isThrow": false,
+            "type": "return",
             "value": undefined,
           },
           Object {
-            "isThrow": false,
+            "type": "return",
             "value": undefined,
           },
         ],
@@ -1828,7 +1828,7 @@ exports[`DOMListener when capture, once, and passive when passive changed should
         ],
         "results": Array [
           Object {
-            "isThrow": false,
+            "type": "return",
             "value": undefined,
           },
         ],
@@ -1856,7 +1856,7 @@ Object {
       ],
       "results": Array [
         Object {
-          "isThrow": false,
+          "type": "return",
           "value": undefined,
         },
       ],
@@ -1878,7 +1878,7 @@ Object {
       ],
       "results": Array [
         Object {
-          "isThrow": false,
+          "type": "return",
           "value": undefined,
         },
       ],
@@ -1897,7 +1897,7 @@ Object {
       ],
       "results": Array [
         Object {
-          "isThrow": false,
+          "type": "return",
           "value": undefined,
         },
       ],
@@ -1924,7 +1924,7 @@ Object {
           ],
           "results": Array [
             Object {
-              "isThrow": false,
+              "type": "return",
               "value": undefined,
             },
           ],
@@ -1968,11 +1968,11 @@ exports[`DOMListener when capture, once, and passive when type changed should re
         ],
         "results": Array [
           Object {
-            "isThrow": false,
+            "type": "return",
             "value": undefined,
           },
           Object {
-            "isThrow": false,
+            "type": "return",
             "value": undefined,
           },
         ],
@@ -1991,7 +1991,7 @@ exports[`DOMListener when capture, once, and passive when type changed should re
         ],
         "results": Array [
           Object {
-            "isThrow": false,
+            "type": "return",
             "value": undefined,
           },
         ],
@@ -2024,7 +2024,7 @@ exports[`DOMListener when capture, once, and passive when updated with no change
         ],
         "results": Array [
           Object {
-            "isThrow": false,
+            "type": "return",
             "value": undefined,
           },
         ],
@@ -2051,7 +2051,7 @@ exports[`DOMListener when not capture, once, or passive should function as expec
         ],
         "results": Array [
           Object {
-            "isThrow": false,
+            "type": "return",
             "value": undefined,
           },
         ],
@@ -2076,7 +2076,7 @@ Object {
       ],
       "results": Array [
         Object {
-          "isThrow": false,
+          "type": "return",
           "value": undefined,
         },
       ],
@@ -2091,7 +2091,7 @@ Object {
       ],
       "results": Array [
         Object {
-          "isThrow": false,
+          "type": "return",
           "value": undefined,
         },
       ],
@@ -2122,11 +2122,11 @@ exports[`DOMListener when not capture, once, or passive when capture changed sho
         ],
         "results": Array [
           Object {
-            "isThrow": false,
+            "type": "return",
             "value": undefined,
           },
           Object {
-            "isThrow": false,
+            "type": "return",
             "value": undefined,
           },
         ],
@@ -2141,7 +2141,7 @@ exports[`DOMListener when not capture, once, or passive when capture changed sho
         ],
         "results": Array [
           Object {
-            "isThrow": false,
+            "type": "return",
             "value": undefined,
           },
         ],
@@ -2172,11 +2172,11 @@ exports[`DOMListener when not capture, once, or passive when listener changed sh
         ],
         "results": Array [
           Object {
-            "isThrow": false,
+            "type": "return",
             "value": undefined,
           },
           Object {
-            "isThrow": false,
+            "type": "return",
             "value": undefined,
           },
         ],
@@ -2191,7 +2191,7 @@ exports[`DOMListener when not capture, once, or passive when listener changed sh
         ],
         "results": Array [
           Object {
-            "isThrow": false,
+            "type": "return",
             "value": undefined,
           },
         ],
@@ -2227,11 +2227,11 @@ exports[`DOMListener when not capture, once, or passive when once changed should
         ],
         "results": Array [
           Object {
-            "isThrow": false,
+            "type": "return",
             "value": undefined,
           },
           Object {
-            "isThrow": false,
+            "type": "return",
             "value": undefined,
           },
         ],
@@ -2246,7 +2246,7 @@ exports[`DOMListener when not capture, once, or passive when once changed should
         ],
         "results": Array [
           Object {
-            "isThrow": false,
+            "type": "return",
             "value": undefined,
           },
         ],
@@ -2282,11 +2282,11 @@ exports[`DOMListener when not capture, once, or passive when passive changed sho
         ],
         "results": Array [
           Object {
-            "isThrow": false,
+            "type": "return",
             "value": undefined,
           },
           Object {
-            "isThrow": false,
+            "type": "return",
             "value": undefined,
           },
         ],
@@ -2301,7 +2301,7 @@ exports[`DOMListener when not capture, once, or passive when passive changed sho
         ],
         "results": Array [
           Object {
-            "isThrow": false,
+            "type": "return",
             "value": undefined,
           },
         ],
@@ -2325,7 +2325,7 @@ Object {
       ],
       "results": Array [
         Object {
-          "isThrow": false,
+          "type": "return",
           "value": undefined,
         },
       ],
@@ -2343,7 +2343,7 @@ Object {
       ],
       "results": Array [
         Object {
-          "isThrow": false,
+          "type": "return",
           "value": undefined,
         },
       ],
@@ -2358,7 +2358,7 @@ Object {
       ],
       "results": Array [
         Object {
-          "isThrow": false,
+          "type": "return",
           "value": undefined,
         },
       ],
@@ -2378,7 +2378,7 @@ Object {
           ],
           "results": Array [
             Object {
-              "isThrow": false,
+              "type": "return",
               "value": undefined,
             },
           ],
@@ -2411,11 +2411,11 @@ exports[`DOMListener when not capture, once, or passive when type changed should
         ],
         "results": Array [
           Object {
-            "isThrow": false,
+            "type": "return",
             "value": undefined,
           },
           Object {
-            "isThrow": false,
+            "type": "return",
             "value": undefined,
           },
         ],
@@ -2430,7 +2430,7 @@ exports[`DOMListener when not capture, once, or passive when type changed should
         ],
         "results": Array [
           Object {
-            "isThrow": false,
+            "type": "return",
             "value": undefined,
           },
         ],
@@ -2456,7 +2456,7 @@ exports[`DOMListener when not capture, once, or passive when updated with no cha
         ],
         "results": Array [
           Object {
-            "isThrow": false,
+            "type": "return",
             "value": undefined,
           },
         ],
@@ -2489,7 +2489,7 @@ exports[`DOMListener when once and passive should function as expected when moun
         ],
         "results": Array [
           Object {
-            "isThrow": false,
+            "type": "return",
             "value": undefined,
           },
         ],
@@ -2518,7 +2518,7 @@ Object {
       ],
       "results": Array [
         Object {
-          "isThrow": false,
+          "type": "return",
           "value": undefined,
         },
       ],
@@ -2537,7 +2537,7 @@ Object {
       ],
       "results": Array [
         Object {
-          "isThrow": false,
+          "type": "return",
           "value": undefined,
         },
       ],
@@ -2578,11 +2578,11 @@ exports[`DOMListener when once and passive when capture changed should remove or
         ],
         "results": Array [
           Object {
-            "isThrow": false,
+            "type": "return",
             "value": undefined,
           },
           Object {
-            "isThrow": false,
+            "type": "return",
             "value": undefined,
           },
         ],
@@ -2601,7 +2601,7 @@ exports[`DOMListener when once and passive when capture changed should remove or
         ],
         "results": Array [
           Object {
-            "isThrow": false,
+            "type": "return",
             "value": undefined,
           },
         ],
@@ -2642,11 +2642,11 @@ exports[`DOMListener when once and passive when listener changed should remove o
         ],
         "results": Array [
           Object {
-            "isThrow": false,
+            "type": "return",
             "value": undefined,
           },
           Object {
-            "isThrow": false,
+            "type": "return",
             "value": undefined,
           },
         ],
@@ -2665,7 +2665,7 @@ exports[`DOMListener when once and passive when listener changed should remove o
         ],
         "results": Array [
           Object {
-            "isThrow": false,
+            "type": "return",
             "value": undefined,
           },
         ],
@@ -2706,11 +2706,11 @@ exports[`DOMListener when once and passive when once changed should remove origi
         ],
         "results": Array [
           Object {
-            "isThrow": false,
+            "type": "return",
             "value": undefined,
           },
           Object {
-            "isThrow": false,
+            "type": "return",
             "value": undefined,
           },
         ],
@@ -2729,7 +2729,7 @@ exports[`DOMListener when once and passive when once changed should remove origi
         ],
         "results": Array [
           Object {
-            "isThrow": false,
+            "type": "return",
             "value": undefined,
           },
         ],
@@ -2770,11 +2770,11 @@ exports[`DOMListener when once and passive when passive changed should remove or
         ],
         "results": Array [
           Object {
-            "isThrow": false,
+            "type": "return",
             "value": undefined,
           },
           Object {
-            "isThrow": false,
+            "type": "return",
             "value": undefined,
           },
         ],
@@ -2793,7 +2793,7 @@ exports[`DOMListener when once and passive when passive changed should remove or
         ],
         "results": Array [
           Object {
-            "isThrow": false,
+            "type": "return",
             "value": undefined,
           },
         ],
@@ -2821,7 +2821,7 @@ Object {
       ],
       "results": Array [
         Object {
-          "isThrow": false,
+          "type": "return",
           "value": undefined,
         },
       ],
@@ -2843,7 +2843,7 @@ Object {
       ],
       "results": Array [
         Object {
-          "isThrow": false,
+          "type": "return",
           "value": undefined,
         },
       ],
@@ -2862,7 +2862,7 @@ Object {
       ],
       "results": Array [
         Object {
-          "isThrow": false,
+          "type": "return",
           "value": undefined,
         },
       ],
@@ -2888,7 +2888,7 @@ Object {
           ],
           "results": Array [
             Object {
-              "isThrow": false,
+              "type": "return",
               "value": undefined,
             },
           ],
@@ -2931,11 +2931,11 @@ exports[`DOMListener when once and passive when type changed should remove origi
         ],
         "results": Array [
           Object {
-            "isThrow": false,
+            "type": "return",
             "value": undefined,
           },
           Object {
-            "isThrow": false,
+            "type": "return",
             "value": undefined,
           },
         ],
@@ -2954,7 +2954,7 @@ exports[`DOMListener when once and passive when type changed should remove origi
         ],
         "results": Array [
           Object {
-            "isThrow": false,
+            "type": "return",
             "value": undefined,
           },
         ],
@@ -2986,7 +2986,7 @@ exports[`DOMListener when once and passive when updated with no changes should n
         ],
         "results": Array [
           Object {
-            "isThrow": false,
+            "type": "return",
             "value": undefined,
           },
         ],
@@ -3018,7 +3018,7 @@ exports[`DOMListener when once should function as expected when mounted 1`] = `
         ],
         "results": Array [
           Object {
-            "isThrow": false,
+            "type": "return",
             "value": undefined,
           },
         ],
@@ -3047,7 +3047,7 @@ Object {
       ],
       "results": Array [
         Object {
-          "isThrow": false,
+          "type": "return",
           "value": undefined,
         },
       ],
@@ -3066,7 +3066,7 @@ Object {
       ],
       "results": Array [
         Object {
-          "isThrow": false,
+          "type": "return",
           "value": undefined,
         },
       ],
@@ -3106,11 +3106,11 @@ exports[`DOMListener when once when capture changed should remove original liste
         ],
         "results": Array [
           Object {
-            "isThrow": false,
+            "type": "return",
             "value": undefined,
           },
           Object {
-            "isThrow": false,
+            "type": "return",
             "value": undefined,
           },
         ],
@@ -3129,7 +3129,7 @@ exports[`DOMListener when once when capture changed should remove original liste
         ],
         "results": Array [
           Object {
-            "isThrow": false,
+            "type": "return",
             "value": undefined,
           },
         ],
@@ -3169,11 +3169,11 @@ exports[`DOMListener when once when listener changed should remove original list
         ],
         "results": Array [
           Object {
-            "isThrow": false,
+            "type": "return",
             "value": undefined,
           },
           Object {
-            "isThrow": false,
+            "type": "return",
             "value": undefined,
           },
         ],
@@ -3192,7 +3192,7 @@ exports[`DOMListener when once when listener changed should remove original list
         ],
         "results": Array [
           Object {
-            "isThrow": false,
+            "type": "return",
             "value": undefined,
           },
         ],
@@ -3232,11 +3232,11 @@ exports[`DOMListener when once when once changed should remove original listener
         ],
         "results": Array [
           Object {
-            "isThrow": false,
+            "type": "return",
             "value": undefined,
           },
           Object {
-            "isThrow": false,
+            "type": "return",
             "value": undefined,
           },
         ],
@@ -3255,7 +3255,7 @@ exports[`DOMListener when once when once changed should remove original listener
         ],
         "results": Array [
           Object {
-            "isThrow": false,
+            "type": "return",
             "value": undefined,
           },
         ],
@@ -3296,11 +3296,11 @@ exports[`DOMListener when once when passive changed should remove original liste
         ],
         "results": Array [
           Object {
-            "isThrow": false,
+            "type": "return",
             "value": undefined,
           },
           Object {
-            "isThrow": false,
+            "type": "return",
             "value": undefined,
           },
         ],
@@ -3319,7 +3319,7 @@ exports[`DOMListener when once when passive changed should remove original liste
         ],
         "results": Array [
           Object {
-            "isThrow": false,
+            "type": "return",
             "value": undefined,
           },
         ],
@@ -3347,7 +3347,7 @@ Object {
       ],
       "results": Array [
         Object {
-          "isThrow": false,
+          "type": "return",
           "value": undefined,
         },
       ],
@@ -3369,7 +3369,7 @@ Object {
       ],
       "results": Array [
         Object {
-          "isThrow": false,
+          "type": "return",
           "value": undefined,
         },
       ],
@@ -3388,7 +3388,7 @@ Object {
       ],
       "results": Array [
         Object {
-          "isThrow": false,
+          "type": "return",
           "value": undefined,
         },
       ],
@@ -3413,7 +3413,7 @@ Object {
           ],
           "results": Array [
             Object {
-              "isThrow": false,
+              "type": "return",
               "value": undefined,
             },
           ],
@@ -3455,11 +3455,11 @@ exports[`DOMListener when once when type changed should remove original listener
         ],
         "results": Array [
           Object {
-            "isThrow": false,
+            "type": "return",
             "value": undefined,
           },
           Object {
-            "isThrow": false,
+            "type": "return",
             "value": undefined,
           },
         ],
@@ -3478,7 +3478,7 @@ exports[`DOMListener when once when type changed should remove original listener
         ],
         "results": Array [
           Object {
-            "isThrow": false,
+            "type": "return",
             "value": undefined,
           },
         ],
@@ -3509,7 +3509,7 @@ exports[`DOMListener when once when updated with no changes should not add/remov
         ],
         "results": Array [
           Object {
-            "isThrow": false,
+            "type": "return",
             "value": undefined,
           },
         ],
@@ -3541,7 +3541,7 @@ exports[`DOMListener when passive should function as expected when mounted 1`] =
         ],
         "results": Array [
           Object {
-            "isThrow": false,
+            "type": "return",
             "value": undefined,
           },
         ],
@@ -3570,7 +3570,7 @@ Object {
       ],
       "results": Array [
         Object {
-          "isThrow": false,
+          "type": "return",
           "value": undefined,
         },
       ],
@@ -3589,7 +3589,7 @@ Object {
       ],
       "results": Array [
         Object {
-          "isThrow": false,
+          "type": "return",
           "value": undefined,
         },
       ],
@@ -3629,11 +3629,11 @@ exports[`DOMListener when passive when capture changed should remove original li
         ],
         "results": Array [
           Object {
-            "isThrow": false,
+            "type": "return",
             "value": undefined,
           },
           Object {
-            "isThrow": false,
+            "type": "return",
             "value": undefined,
           },
         ],
@@ -3652,7 +3652,7 @@ exports[`DOMListener when passive when capture changed should remove original li
         ],
         "results": Array [
           Object {
-            "isThrow": false,
+            "type": "return",
             "value": undefined,
           },
         ],
@@ -3692,11 +3692,11 @@ exports[`DOMListener when passive when listener changed should remove original l
         ],
         "results": Array [
           Object {
-            "isThrow": false,
+            "type": "return",
             "value": undefined,
           },
           Object {
-            "isThrow": false,
+            "type": "return",
             "value": undefined,
           },
         ],
@@ -3715,7 +3715,7 @@ exports[`DOMListener when passive when listener changed should remove original l
         ],
         "results": Array [
           Object {
-            "isThrow": false,
+            "type": "return",
             "value": undefined,
           },
         ],
@@ -3756,11 +3756,11 @@ exports[`DOMListener when passive when once changed should remove original liste
         ],
         "results": Array [
           Object {
-            "isThrow": false,
+            "type": "return",
             "value": undefined,
           },
           Object {
-            "isThrow": false,
+            "type": "return",
             "value": undefined,
           },
         ],
@@ -3779,7 +3779,7 @@ exports[`DOMListener when passive when once changed should remove original liste
         ],
         "results": Array [
           Object {
-            "isThrow": false,
+            "type": "return",
             "value": undefined,
           },
         ],
@@ -3819,11 +3819,11 @@ exports[`DOMListener when passive when passive changed should remove original li
         ],
         "results": Array [
           Object {
-            "isThrow": false,
+            "type": "return",
             "value": undefined,
           },
           Object {
-            "isThrow": false,
+            "type": "return",
             "value": undefined,
           },
         ],
@@ -3842,7 +3842,7 @@ exports[`DOMListener when passive when passive changed should remove original li
         ],
         "results": Array [
           Object {
-            "isThrow": false,
+            "type": "return",
             "value": undefined,
           },
         ],
@@ -3870,7 +3870,7 @@ Object {
       ],
       "results": Array [
         Object {
-          "isThrow": false,
+          "type": "return",
           "value": undefined,
         },
       ],
@@ -3892,7 +3892,7 @@ Object {
       ],
       "results": Array [
         Object {
-          "isThrow": false,
+          "type": "return",
           "value": undefined,
         },
       ],
@@ -3911,7 +3911,7 @@ Object {
       ],
       "results": Array [
         Object {
-          "isThrow": false,
+          "type": "return",
           "value": undefined,
         },
       ],
@@ -3936,7 +3936,7 @@ Object {
           ],
           "results": Array [
             Object {
-              "isThrow": false,
+              "type": "return",
               "value": undefined,
             },
           ],
@@ -3978,11 +3978,11 @@ exports[`DOMListener when passive when type changed should remove original liste
         ],
         "results": Array [
           Object {
-            "isThrow": false,
+            "type": "return",
             "value": undefined,
           },
           Object {
-            "isThrow": false,
+            "type": "return",
             "value": undefined,
           },
         ],
@@ -4001,7 +4001,7 @@ exports[`DOMListener when passive when type changed should remove original liste
         ],
         "results": Array [
           Object {
-            "isThrow": false,
+            "type": "return",
             "value": undefined,
           },
         ],
@@ -4032,7 +4032,7 @@ exports[`DOMListener when passive when updated with no changes should not add/re
         ],
         "results": Array [
           Object {
-            "isThrow": false,
+            "type": "return",
             "value": undefined,
           },
         ],

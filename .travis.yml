@@ -1,36 +1,15 @@
 language: node_js
-
 node_js:
-  - stable
-  - '8'
-  - '6'
-
+- stable
 sudo: false
-
-env:
-  global:
-    secure: PfhvFhG8WVO+nzjFe/Hz0p0xf5P0+mimvSIsh033oLN+mHlcQhiHIsty0V4MN6/i9zWeldm1uUPCpVlc2VNOGGS8CwmaPa/wCJ/QLcH/SnhX/7K6AlXoK7BncOq5nujQxpwxe0mIdo47Bn/hKqGPm2ONYQ5g7rhVuKuycWMmUveEqScVOyroTuRSrVRpx2sSsbvTDNtPVZ4eUC4tThe5raWPKYNs38j2chZYYsxkZ1Qkpato+T9J1NW447KnMefhdLuuykLNXagDa9/rxiTtZT+K0fICPkLpIFEtnSH4zKnZpnYqoR6qJ/RlwNPDgF8exFo4mAWZ+rSITW4Ul+nZFSlMpJ832eOURCyC2ofggETBgCa8tHhLIDRyJPflmSdyJuToPrfjke6XhBYRTA6zG/4SLvFYhRJdZ0fFEPHtPbu5znU0mrhusjojK2QYxY6TjKy7p6rv1gFtViK8rLeTu7ezCk3XQfVfLrzWTZakdPCW/L8MxJM/3H2R+dF3lCDH10OYXd451AWavTKT5THScaaEPSjgMHbkN4XlmREc+FMCsp+3XIoRZgyk87pPgaiJmxVuBoyNE6V79gZ2tZd/6HAPXbe0u8p7kBlOjgiSoaOEDkQRICnzKMl2z0zmYdS7EhfcUs7ZERbUVrzkSebX4eRpBF8zfJdI/hvrl3UuyaQ=
-
 before_install:
-  - npm install -g pr-bumper@^3.0.0
-
+- yarn global add bumpr@^2.7.2
 install:
-  - yarn install
-
+- yarn install
 before_script:
-  - $(npm root -g)/pr-bumper/.travis/maybe-check-scope.sh
-
+- bumpr check
 script:
-  - $(npm root -g)/pr-bumper/.travis/maybe-test.sh
-  - $(npm root -g)/pr-bumper/.travis/maybe-bump-version.sh
-
-deploy:
-  provider: npm
-  email: dogmaiobot@gmail.com
-  skip_cleanup: true
-  on:
-    all_branches: true
-    node: '8'
-    tags: true
-  api_key:
-    secure: PuAq7W6ExfY6csJMajklfSZZBBtlIFqAIMaRtpvk3PiSoniB03QaskJNOWnP001NcwFwmoUzqkv/K+qifIpaGnNNhbzWmt7IS7lfeWMPB4ynutiN34qkwI6IZP6wf/leBY34a74ArSyleJqvqCSTHM+hLrQNuh6UwmqXr6l6uvHwkXOTyAlTYO2PUCK+IxcJtAf10KJo6JmDXkAFOUph5HWFbO2tZ022bwiykQm0d1Io4tn05giIBkgUVe18GJr41lbqxDbMj32WPuQ2EzGWf/OgPcNS1cVkwJnmONKHHp2lE1AkORxW+z6xkhFJnfHLY4Ii4mTR7UAtqZPZJtwRS1wwrgIHCWhzYpdPjiAc0XPTn4zYde0tOuJgpROmwPP0/nkp77BQhmGZA6rPYWDCNGjWKBChEB8efJYswvWbceOd7wk/sk3Xo6FVwBEZI5g0juSLOdvQT39mdOVS0YJ60yUd/ujUFFkEDhRc38ZxrIZwFSh9CRH/Yj3efDSou5mukhjO9xiDESGa9X3kkBRaW0cc8z4DScvzFVM1Y9q2covBqIob6/6qtshm1mQ8Pje5gA94CaYUw8x2eVrsueWTz7WOHzQdeiGpnsB+4MWmwTYB01Qv/a+K+v4WhBopHk2bkFEzB0jT3wGpBBkAdhiaDyP82AYFq6T9kukTygwMelg=
+- yarn test
+- bumpr bump
+after_success:
+- bumpr publish
