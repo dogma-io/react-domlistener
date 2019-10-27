@@ -50,10 +50,10 @@ describe('DOMListener', () => {
         }
         wrapper = mount(
           <DOMListener
+            {...props}
             listener={listener}
             target={target}
             type="click"
-            {...props}
           />,
         )
       })
